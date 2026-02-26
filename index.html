@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bronislav Klus - AI architekt růstu. Navrhuji a implementuji AI systémy, které uvolní kapacitu týmu a umožní firmě škálovat.">
-    <title>Bronislav Klus — AI architekt růstu</title>
+    <meta name="description" content="Pomáhám firmám růst bez proporcionálního růstu nákladů. Najdeme bottleneck, vyřešíme ho pomocí AI a uvolníme týmu 15-30% času.">
+    <title>Bronislav Klus — Růst bez proporcionálního růstu nákladů</title>
 
     <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -12,8 +12,8 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bronislav Klus — AI architekt růstu">
-    <meta property="og:description" content="Navrhuji a implementuji AI systémy, které uvolní kapacitu týmu, odstraní provozní bottlenecky a umožní firmě škálovat.">
+    <meta property="og:title" content="Bronislav Klus — Růst bez proporcionálního růstu nákladů">
+    <meta property="og:description" content="Najdeme spolu bottleneck ve vašich procesech a vyřešíme ho pomocí AI. Uvolníme týmu 15-30% času bez nových lidí a navyšování nákladů.">
     <meta property="og:url" content="https://bronislavklus.cz">
     <meta property="og:locale" content="cs_CZ">
 
@@ -22,12 +22,12 @@
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "Bronislav Klus - AI architekt růstu",
-        "description": "Navrhuji a implementuji AI systémy, které uvolní kapacitu týmu a umožní firmě škálovat.",
+        "name": "Bronislav Klus - Růst bez proporcionálního růstu nákladů",
+        "description": "Pomáhám firmám růst bez proporcionálního růstu nákladů pomocí AI a automatizace procesů.",
         "url": "https://bronislavklus.cz",
         "email": "brona.klus@gmail.com",
         "priceRange": "$$",
-        "serviceType": ["Process Automation", "AI Integration", "AI Systems", "Data Architecture"],
+        "serviceType": ["Process Automation", "AI Integration", "AI Systems", "Business Process Optimization"],
         "areaServed": {
             "@type": "Country",
             "name": "Czech Republic"
@@ -35,7 +35,7 @@
         "founder": {
             "@type": "Person",
             "name": "Bronislav Klus",
-            "jobTitle": "AI Growth Architect"
+            "jobTitle": "AI & Automation Consultant"
         }
     }
     </script>
@@ -257,7 +257,7 @@
         .hero-sub {
             font-size: 1.15rem;
             color: var(--text-muted);
-            max-width: 560px;
+            max-width: 720px;
             line-height: 1.7;
             margin-bottom: 44px;
         }
@@ -266,6 +266,33 @@
             display: flex;
             gap: 16px;
             flex-wrap: wrap;
+        }
+
+        .scroll-indicator {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(10px);
+            }
+            60% {
+                transform: translateY(5px);
+            }
         }
 
         .btn-primary {
@@ -310,6 +337,81 @@
         .btn-secondary:hover {
             border-color: rgba(255,255,255,0.15);
             background: rgba(255,255,255,0.03);
+        }
+
+        /* Proof bar */
+        .proof-bar {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Value Proposition */
+        .value-prop {
+            padding: 80px 0;
+            background: linear-gradient(180deg, var(--bg) 0%, rgba(20,20,24,0.3) 100%);
+        }
+
+        .value-prop-content {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .value-prop-block {
+            margin-bottom: 48px;
+        }
+
+        .value-prop-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .value-prop-block p {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .value-prop-block ul {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+        }
+
+        .value-prop-block ul li {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: var(--text);
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .value-prop-block ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .value-prop-impact {
+            background: var(--bg-card);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-top: 32px;
+        }
+
+        .value-prop-impact p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .value-prop-impact strong {
+            color: var(--accent);
         }
 
         /* Proof bar */
@@ -900,6 +1002,22 @@
         @media (min-width: 768px) {
             .steps-3 {
                 grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .steps-4 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .steps-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .steps-4 {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
 
@@ -1695,17 +1813,26 @@
     <!-- HERO -->
     <section class="hero">
         <div class="container">
-            <div class="hero-label">AI architekt růstu</div>
-            <h1>Růst firmy nesmí být<br><em>limitovaný kapacitou týmu</em></h1>
+            <div class="hero-label">Pro rostoucí firmy</div>
+            <h1>Kapacita týmu není<br><em>strop vašeho růstu</em></h1>
             <p class="hero-sub">
-                Navrhuji a implementuji AI systémy, které uvolní interní kapacitu,
-                odstraní provozní bottlenecky a umožní firmě škálovat
-                bez neřízeného navyšování nákladů.
+                AI projekty selhávají, protože řeší technologii místo procesů.
+                <br><br>
+                Najdeme spolu bottleneck ve vašich procesech
+                a vyřešíme ho systémem, který funguje — ne který vypadá hezky.
+                <br><br>
+                <strong>15-30% času zpět týmu. Každý týden.</strong><br>
+                Bez nových pozic.
             </p>
             <div class="hero-actions">
                 <a href="#kontakt" class="btn-primary">Domluvit strategickou konzultaci →</a>
                 <a href="#jak-to-funguje" class="btn-secondary">Jak to funguje</a>
             </div>
+            <a href="#problemy" class="scroll-indicator" aria-label="Scrollovat dolů">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
         </div>
     </section>
 
@@ -1714,41 +1841,27 @@
     <section class="problems" id="problemy">
         <div class="container">
             <div class="section-eyebrow">Realita růstu</div>
-            <h2 class="section-title">Když firma roste, problémy nejsou na trhu. Jsou uvnitř.</h2>
+            <h2 class="section-title">Tři signály, že je čas optimalizovat</h2>
             <div class="problem-grid">
                 <div class="problem-card">
                     <span class="problem-icon">🎯</span>
-                    <h3>Zakladatel je rozhodovací bottleneck</h3>
-                    <p>Všechno musí přes vás. Tým čeká, vy nestíháte. Firma roste, ale vy jste její limit.</p>
+                    <h3>Kapacita se ztrácí v rutině</h3>
+                    <p>Tým dělá svou práci — ale hodiny mizí v přepisování dat, hledání informací a ruční synchronizaci mezi systémy. Není to jejich hlavní práce, ale někdo to udělat musí.</p>
                 </div>
                 <div class="problem-card">
                     <span class="problem-icon">⏱️</span>
-                    <h3>Tým tráví čas operativou místo výkonem</h3>
-                    <p>Kvalifikovaní lidé na nekvalifikované práci. Platíte experty, aby vyplňovali tabulky.</p>
+                    <h3>Růst přináší víc koordinace než výkonu</h3>
+                    <p>Čím víc rostete, tím víc času jde na předávání, synchronizaci a kontrolu. Ne na samotnou práci.</p>
                 </div>
                 <div class="problem-card">
-                    <span class="problem-icon">📉</span>
-                    <h3>Obchod nestíhá follow-up</h3>
-                    <p>Leady se ztrácejí, protože nikdo nemá čas reagovat včas. Příležitosti odcházejí ke konkurenci.</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">🔄</span>
-                    <h3>Data nejsou propojená</h3>
-                    <p>Každý systém žije zvlášť. Rozhodujete bez přehledu, na základě pocitů místo dat.</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">📈</span>
-                    <h3>Procesy vznikají ad hoc</h3>
-                    <p>Co fungovalo pro 10 lidí, padá při 50. Ruční práce roste rychleji než tým.</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">👤</span>
-                    <h3>Bez vás firma stojí. S vámi nestíhá.</h3>
-                    <p>Vybudovali jste něco, co na vás závisí. Ale vy už nemáte kapacitu. A najímat další lidi problém nevyřeší.</p>
+                    <span class="problem-icon">📊</span>
+                    <h3>Máte data, ale ne přehled</h3>
+                    <p>Odpovědi na důležité otázky existují — jsou jen roztříštěné po systémech.</p>
                 </div>
             </div>
             <p class="section-note">
-                Zpočátku to funguje. Ve fázi růstu to začne brzdit.
+                To není selhání. To je přirozený růst.<br>
+                AI a automatizace nejsou náhrada lidí — jsou infrastruktura pro další růst.
             </p>
         </div>
     </section>
@@ -1886,23 +1999,24 @@
     <!-- HOW IT WORKS -->
     <section id="jak-to-funguje">
         <div class="container">
-            <div class="section-eyebrow">Přístup</div>
-            <h2 class="section-title">Neimplementuji izolované automatizace.<br>Navrhuji strukturu, která umožní růst.</h2>
-            <div class="steps steps-3">
+            <div class="section-eyebrow">Jak to funguje</div>
+            <h2 class="section-title">Jak najdeme a vyřešíme váš bottleneck</h2>
+            <div class="steps steps-4">
                 <div class="step">
-                    <div class="step-number">01</div>
-                    <h4>Diagnostika kapacitních úniků</h4>
-                    <p>Identifikace míst, kde firma ztrácí čas, rychlost a výkon. Mapuji bottlenecky, které brzdí růst.</p>
+                    <h4>Společně najdeme, kde skutečně uniká kapacita</h4>
+                    <p>Ne dotazník. Rozhovor s vámi a s lidmi, kteří práci dělají.<br><strong>→ Výstup:</strong> Víte přesně, který proces vás brzdí nejvíc</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">02</div>
-                    <h4>Návrh AI architektury</h4>
-                    <p>Systémové řešení odpovídající fázi firmy — ne izolovaný nástroj, ale infrastruktura pro škálování.</p>
+                    <h4>Dostanete návrh řešení s jasným dopadem</h4>
+                    <p>Konkrétní řešení, odhad času a čísla.<br><strong>→ Výstup:</strong> Rozhodujete na základě faktů, ne domněnek</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">03</div>
-                    <h4>Praktická implementace</h4>
-                    <p>Reálné nasazení systémů a workflow, které začnou generovat kapacitu okamžitě. Měsíc podpory v ceně.</p>
+                    <h4>Postavím a nasadím systém</h4>
+                    <p>Propojím s vašimi nástroji, ověřím spolehlivost, vyškolím tým.<br><strong>→ Výstup:</strong> Řešení funguje v provozu, ne jen v demu</p>
+                </div>
+                <div class="step">
+                    <h4>Ověříme výsledky společně</h4>
+                    <p>Kolik hodin se vrátilo, kde se to projevilo.<br><strong>→ Výstup:</strong> Vidíte ROI, ne jen pocit zlepšení</p>
                 </div>
             </div>
 
@@ -1918,72 +2032,13 @@
         </div>
     </section>
 
-    <!-- IMPACT -->
-    <section class="roi-section">
-        <div class="container">
-            <div class="roi-box">
-                <h2 class="roi-title">Výsledkem není „nasazená AI". Výsledkem je:</h2>
-                <div class="roi-grid roi-grid-5">
-                    <div class="roi-item">
-                        <div class="roi-number">20–40 h</div>
-                        <div class="roi-label">týdně vrácených<br>zpět týmu</div>
-                    </div>
-                    <div class="roi-item">
-                        <div class="roi-number">2×</div>
-                        <div class="roi-label">rychlejší<br>obchodní cyklus</div>
-                    </div>
-                    <div class="roi-item">
-                        <div class="roi-number">↓</div>
-                        <div class="roi-label">závislost na<br>konkrétních lidech</div>
-                    </div>
-                    <div class="roi-item">
-                        <div class="roi-number">↑</div>
-                        <div class="roi-label">predikovatelnost<br>výkonu firmy</div>
-                    </div>
-                    <div class="roi-item">
-                        <div class="roi-number">0</div>
-                        <div class="roi-label">nových lidí nutných<br>k dalšímu růstu</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COOPERATION FORMS -->
-    <section id="spoluprace">
-        <div class="container">
-            <div class="section-eyebrow">Spolupráce</div>
-            <h2 class="section-title">Tři způsoby, jak můžeme spolupracovat</h2>
-            <div class="cooperation-grid">
-                <div class="cooperation-card">
-                    <div class="cooperation-icon">🔍</div>
-                    <h3>Strategický AI Audit</h3>
-                    <p class="cooperation-for">Pro firmy, které chtějí jasnou roadmapu</p>
-                    <p>Diagnostika kapacitních úniků a prioritizovaný plán implementace. Víte přesně, kde začít a proč.</p>
-                </div>
-                <div class="cooperation-card">
-                    <div class="cooperation-icon">🛠️</div>
-                    <h3>Implementační projekt</h3>
-                    <p class="cooperation-for">Pro firmy s konkrétním bottleneckem</p>
-                    <p>Návrh a realizace konkrétního řešení. Od analýzy po nasazení a předání týmu.</p>
-                </div>
-                <div class="cooperation-card featured">
-                    <div class="cooperation-icon">🤝</div>
-                    <h3>AI Growth Partner</h3>
-                    <p class="cooperation-for">Pro vedení, které chce systematickou transformaci</p>
-                    <p>Dlouhodobá spolupráce na AI infrastruktuře. Průběžná optimalizace a rozvoj systémů.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CASE STUDY -->
     <section id="reference">
         <div class="container">
             <div class="section-eyebrow">Reference</div>
-            <h2 class="section-title">Projekty na zakázku</h2>
+            <h2 class="section-title">Výsledky z praxe</h2>
             <p class="section-desc" style="margin-bottom: 36px;">
-                Příklady větších projektů, které jsem realizoval pro externí klienty.
+                Příklady projektů, které jsem realizoval pro klienty.
             </p>
             <div class="case-study-carousel">
                 <!-- Scaleupboard -->
@@ -2022,7 +2077,7 @@
                         <span class="case-meta-badge">CRM na míru</span>
                         <span class="case-meta-badge">Automatizace nabídek</span>
                     </div>
-                    <h3>Pavel Carda — prémiové kontejnery</h3>
+                    <h3>Prémiové kontejnery</h3>
                     <p>
                         Firma Prémiové kontejnery potřebovala zrychlit a zpřesnit proces tvorby nabídek.
                         Obchodník trávil čas ručním skládáním variant a přepisováním údajů mezi systémy.
@@ -2057,36 +2112,17 @@
             <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        <strong>Spolupracuji s vedením firem, které chápou, že růst bez systémů je jen dočasný.</strong>
+                        <strong>Pomáhám firmám růst bez proporcionálního růstu nákladů.</strong>
                     </p>
                     <p>
-                        Nejsem člověk, který jen propojuje nástroje.
-                        Přemýšlím nad tím, jak ve firmě skutečně vzniká hodnota —
-                        a kde může AI infrastruktura odstranit limity růstu.
+                        Mám background v Pythonu, AI modelech a automatizaci procesů.
+                        Než navrhuji řešení, nejdřív pochopím váš byznys model 
+                        a kde ve firmě vzniká hodnota.
                     </p>
                     <p>
-                        Specializuji se na Python, automatizaci a práci s AI modely.
-                        Navrhuji řešení tak, aby nebyla jen technicky funkční, ale aby
-                        generovala kapacitu pro další růst.
+                        Každý projekt začínám diagnostikou — technologie přichází 
+                        až když vím, co skutečně potřebujete vyřešit.
                     </p>
-                    <p>
-                        Ke každému projektu přistupuji strategicky — nejdřív pochopím
-                        fázi firmy a její bottlenecky, až potom navrhuji architekturu.
-                    </p>
-                </div>
-                <div class="tech-stack">
-                    <h4>Pracuji s</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">OpenAI</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">OCR</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">n8n</span>
-                        <span class="tech-tag">Supabase</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -2099,7 +2135,7 @@
             <h2 class="section-title">Probrat, kde vás brzdí kapacita</h2>
             <p class="section-desc">
                 30 minut strategické konzultace. Identifikujeme hlavní bottlenecky
-                a probereme, jestli a jak vám AI infrastruktura dokáže pomoct.
+                a probereme, jestli a jak vám můžu pomoct.
             </p>
 
             <div class="cta-grid">
@@ -2231,13 +2267,171 @@
         // Chatbot conversation tree - profesionální B2B verze
         const chatbotTree = {
             // ═══════════════════════════════════════════
-            // GROWTH BLOCKER SCAN - INTRO
+            // HLAVNÍ MENU
             // ═══════════════════════════════════════════
             root: {
+                message: "Jak vám můžu pomoct?",
+                options: [
+                    { text: "🔍 Spustit scan (60 sekund)", next: "scan_intro" },
+                    { text: "❓ Mám otázky", next: "faq_menu" }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // GROWTH BLOCKER SCAN - INTRO
+            // ═══════════════════════════════════════════
+            scan_intro: {
                 message: "Nechci vám prodávat.\n\nChci vám za 60 sekund ukázat, kde vám teče kapacita.\n\n3 otázky. Žádný bullshit.",
                 options: [
                     { text: "Spustit scan", next: "q1_size" },
                     { text: "Rovnou konzultace", next: "booking", cta: true }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // FAQ MENU
+            // ═══════════════════════════════════════════
+            faq_menu: {
+                message: "Co vás zajímá?",
+                options: [
+                    { text: "💼 O spolupráci", next: "faq_spoluprace" },
+                    { text: "⚙️ O procesech a AI", next: "faq_procesy" },
+                    { text: "💰 O výsledcích a cenách", next: "faq_vysledky" }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // FAQ: O SPOLUPRÁCI
+            // ═══════════════════════════════════════════
+            faq_spoluprace: {
+                message: "Otázky o spolupráci:",
+                options: [
+                    { text: "Jak probíhá spolupráce?", next: "faq_jak_probiha" },
+                    { text: "Kolik času mi to zabere?", next: "faq_cas" },
+                    { text: "Co když nevím, co potřebuji?", next: "faq_nemam_jasno" },
+                    { text: "Je to pro mou velikost firmy?", next: "faq_velikost_firmy" }
+                ]
+            },
+
+            faq_jak_probiha: {
+                message: "Jak probíhá spolupráce?\n\n1️⃣ Diagnostika — společně najdeme, kde uniká kapacita\n\n2️⃣ Návrh — dostanete konkrétní řešení s odhadem dopadu\n\n3️⃣ Implementace — postavím a nasadím systém\n\n4️⃣ Ověření — změříme reálné výsledky\n\nŽádné překvapení. Víte přesně, co dostanete.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_spoluprace" }
+                ]
+            },
+
+            faq_cas: {
+                message: "Kolik času mi to zabere?\n\nPrvní týdny: 2-3 hodiny týdně na konzultace a předávání informací.\n\nPo nasazení: Minimálně. Systémy běží samy, vy jen sklízíte výsledky.\n\nČas, který investujete na začátku, se vám vrátí mnohonásobně.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_spoluprace" }
+                ]
+            },
+
+            faq_nemam_jasno: {
+                message: "Co když nevím, co přesně potřebuji?\n\nTo je naprosto v pořádku. Většina klientů to neví.\n\nProto začínáme diagnostikou, ne implementací. Společně najdeme, kde skutečně uniká kapacita.\n\nPrvní konzultace je právě od toho — zorientovat se.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_spoluprace" }
+                ]
+            },
+
+            faq_velikost_firmy: {
+                message: "Je to pro mou velikost firmy?\n\nIdeálně: 10-200 lidí s opakujícími se procesy.\n\nPříliš malé firmy (pod 10 lidí) většinou nemají dost objemu na to, aby se automatizace vyplatila.\n\nPříliš velké korporace mají vlastní IT oddělení.\n\nStřední firmy v růstu — tam je největší páka.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_spoluprace" }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // FAQ: O PROCESECH A AI
+            // ═══════════════════════════════════════════
+            faq_procesy: {
+                message: "Otázky o procesech a AI:",
+                options: [
+                    { text: "Jaké procesy lze automatizovat?", next: "faq_jake_procesy" },
+                    { text: "Potřebuji technické znalosti?", next: "faq_technicke_znalosti" },
+                    { text: "Co když máme staré systémy?", next: "faq_stare_systemy" },
+                    { text: "Jak je to s bezpečností dat?", next: "faq_bezpecnost" }
+                ]
+            },
+
+            faq_jake_procesy: {
+                message: "Jaké procesy lze automatizovat?\n\nVše, co se opakuje a má jasná pravidla:\n\n• Zpracování objednávek a fakturace\n• Reporting a přehledy\n• Follow-up a komunikace\n• Přepis dat mezi systémy\n• Onboarding klientů/zaměstnanců\n• Kontrola a validace dokumentů\n\nPokud to děláte víc než 3× týdně — pravděpodobně to jde automatizovat.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_procesy" }
+                ]
+            },
+
+            faq_technicke_znalosti: {
+                message: "Potřebuji technické znalosti?\n\nNe. Dodávám kompletní řešení.\n\nVy popíšete, co potřebujete. Já navrhnu a postavím systém. Vy ho používáte.\n\nŽádné programování, žádné nastavování. To je moje práce.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_procesy" }
+                ]
+            },
+
+            faq_stare_systemy: {
+                message: "Co když máme staré systémy?\n\nIntegruju se s čímkoliv, co má API nebo alespoň export/import.\n\nExcel, starý ERP, e-mailový klient — většinou to jde propojit.\n\nV nejhorším případě použijeme RPA (robotickou automatizaci), která ovládá systém jako člověk.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_procesy" }
+                ]
+            },
+
+            faq_bezpecnost: {
+                message: "Jak je to s bezpečností dat?\n\n• Data zůstávají u vás nebo na vašem cloudu\n• Používám enterprise řešení (Azure, AWS)\n• Přístupová práva nastavujeme společně\n• Citlivá data lze anonymizovat\n\nBezpečnost řeším od začátku, ne jako dodatek.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_procesy" }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // FAQ: O VÝSLEDCÍCH A CENÁCH
+            // ═══════════════════════════════════════════
+            faq_vysledky: {
+                message: "Otázky o výsledcích a cenách:",
+                options: [
+                    { text: "Jaké jsou typické výsledky?", next: "faq_typicke_vysledky" },
+                    { text: "Kolik to stojí?", next: "faq_cena" },
+                    { text: "Jak rychle uvidím výsledky?", next: "faq_jak_rychle" },
+                    { text: "Co když to nebude fungovat?", next: "faq_garance" }
+                ]
+            },
+
+            faq_typicke_vysledky: {
+                message: "Jaké jsou typické výsledky?\n\n• 15-30% času týmu zpět každý týden\n• ROI zpravidla v rámci měsíců\n• Méně chyb v rutinních procesech\n• Lepší přehled o tom, co se děje\n• Méně závislosti na konkrétních lidech\n\nČísla měříme. Žádné \"pocitové\" zlepšení.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_vysledky" }
+                ]
+            },
+
+            faq_cena: {
+                message: "Kolik to stojí?\n\nZáleží na rozsahu a složitosti.\n\nMenší automatizace: desítky tisíc Kč\nKomplexní systémy: stovky tisíc Kč\n\nPrvní konzultace je zdarma. Po ní dostanete konkrétní nabídku s cenou.\n\nŽádné skryté poplatky. Cena = cena.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_vysledky" }
+                ]
+            },
+
+            faq_jak_rychle: {
+                message: "Jak rychle uvidím výsledky?\n\nPrvní výsledky: 2-4 týdny\nPlný efekt: 1-3 měsíce\n\nZáleží na složitosti. Jednoduchá automatizace může běžet za týden. Komplexní systém potřebuje čas na testování a ladění.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_vysledky" }
+                ]
+            },
+
+            faq_garance: {
+                message: "Co když to nebude fungovat?\n\nMěříme výsledky, ne pocity.\n\nPřed startem se dohodneme na metrikách úspěchu. Po nasazení je vyhodnotíme.\n\nPokud nedodám, co jsem slíbil — řešíme to. Transparentně.\n\nNechci nespokojené klienty. To není dobrý byznys.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Další otázky", next: "faq_vysledky" }
                 ]
             },
 
