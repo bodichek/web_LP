@@ -3,149 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bronislav Klus - AI & Automation Developer. Specializace na AI integrace, automatizaci procesů, Django/Python vývoj a RAG chatboty.">
-    <title>Bronislav Klus | AI & Automation Developer</title>
+    <meta name="description" content="Bronislav Klus - AI řešení pro české firmy. Automatizace procesů, AI systémy na míru, datová architektura.">
+    <title>Bronislav Klus — AI řešení pro české firmy</title>
 
     <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#00d4ff">
+    <meta name="theme-color" content="#D4F97C">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bronislav Klus | AI & Automation Developer">
-    <meta property="og:description" content="Pomáhám firmám automatizovat procesy, integrovat AI a budovat inteligentní systémy. Python, n8n, Claude API, RAG chatboti.">
-    <meta property="og:image" content="https://bronislavklus.cz/og-image.png">
+    <meta property="og:title" content="Bronislav Klus — AI řešení pro české firmy">
+    <meta property="og:description" content="Stavím AI systémy pro malé a střední firmy. Zpracování dokumentů, firemní data, reporty — to co vám dnes zabere hodiny, bude trvat minuty.">
     <meta property="og:url" content="https://bronislavklus.cz">
     <meta property="og:locale" content="cs_CZ">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bronislav Klus | AI & Automation Developer">
-    <meta name="twitter:description" content="Pomáhám firmám automatizovat procesy, integrovat AI a budovat inteligentní systémy.">
-    <meta name="twitter:image" content="https://bronislavklus.cz/og-image.png">
-
-    <!-- Schema.org ProfessionalService -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "Bronislav Klus - AI & Automation Developer",
-        "description": "Specializace na AI integrace, automatizaci procesů, Django/Python vývoj a RAG chatboty.",
+        "name": "Bronislav Klus - AI řešení pro české firmy",
+        "description": "Stavím AI systémy pro malé a střední firmy. Automatizace procesů, AI systémy na míru.",
         "url": "https://bronislavklus.cz",
-        "telephone": "+420777512923",
         "email": "brona.klus@gmail.com",
         "priceRange": "$$",
-        "serviceType": ["AI Integration", "Process Automation", "Web Development", "Data Processing", "RAG Chatbots"],
+        "serviceType": ["Process Automation", "AI Integration", "AI Systems", "Data Architecture"],
         "areaServed": {
             "@type": "Country",
             "name": "Czech Republic"
         },
-        "sameAs": [],
         "founder": {
             "@type": "Person",
             "name": "Bronislav Klus",
-            "jobTitle": "AI & Automation Developer"
-        },
-        "knowsAbout": ["Python", "Django", "Claude API", "OpenAI", "n8n", "Supabase", "PostgreSQL", "pgvector", "Playwright"]
+            "jobTitle": "AI Developer"
+        }
     }
     </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
 
     <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
-            --bg-deep: #050508;
-            --bg-primary: #0a0a0f;
-            --bg-elevated: #12121a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
-            --glass-bg: rgba(255, 255, 255, 0.02);
-
-            --text-primary: #f0f0f5;
-            --text-secondary: rgba(240, 240, 245, 0.65);
-            --text-muted: rgba(240, 240, 245, 0.4);
-
-            --accent-cyan: #00d4ff;
-            --accent-purple: #8b5cf6;
-            --accent-pink: #ec4899;
-            --accent-amber: #f59e0b;
-
-            --gradient-primary: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
-            --gradient-glow: linear-gradient(135deg, rgba(0, 212, 255, 0.4), rgba(139, 92, 246, 0.4));
-
-            --font-display: 'Syne', sans-serif;
-            --font-body: 'Outfit', sans-serif;
-
-            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --bg: #0C0C0E;
+            --bg-card: #141418;
+            --bg-card-hover: #1a1a20;
+            --text: #E8E6E3;
+            --text-muted: #8A8A8F;
+            --accent: #D4F97C;
+            --accent-dim: rgba(212, 249, 124, 0.12);
+            --accent-glow: rgba(212, 249, 124, 0.06);
+            --border: rgba(255,255,255,0.06);
+            --border-accent: rgba(212, 249, 124, 0.2);
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --radius: 16px;
+            --radius-sm: 10px;
         }
 
-        html {
-            scroll-behavior: smooth;
-            scrollbar-width: thin;
-            scrollbar-color: var(--accent-cyan) var(--bg-primary);
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: var(--font-body);
-            background: var(--bg-deep);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            font-size: 16.5px;
             -webkit-font-smoothing: antialiased;
-        }
-
-        /* Full-page scroll container */
-        .page-container {
-            height: 100vh;
-            overflow-y: auto;
-            scroll-snap-type: y mandatory;
-            scroll-behavior: smooth;
-        }
-
-        .page-section {
-            height: 100vh;
-            max-height: 100vh;
-            overflow: hidden;
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-        }
-
-        /* Disable snap on mobile for better UX */
-        @media (max-width: 968px) {
-            .page-container {
-                scroll-snap-type: none;
-            }
-            .page-section {
-                height: auto;
-                max-height: none;
-                min-height: auto;
-                overflow: visible;
-                scroll-snap-align: none;
-                padding: 50px 0;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .page-section {
-                padding: 40px 0;
-            }
+            overflow-x: hidden;
         }
 
         /* Grain overlay */
@@ -153,77 +85,20 @@
             content: '';
             position: fixed;
             inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
             pointer-events: none;
-            z-index: 1000;
+            z-index: 9999;
         }
 
-        /* Liquid background blobs */
-        .liquid-bg {
-            position: fixed;
-            inset: 0;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        .blob {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.5;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .blob-1 {
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.3) 0%, transparent 70%);
-            top: -200px;
-            right: -100px;
-            animation-delay: 0s;
-        }
-
-        .blob-2 {
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
-            bottom: -150px;
-            left: -100px;
-            animation-delay: -7s;
-        }
-
-        .blob-3 {
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(236, 72, 153, 0.2) 0%, transparent 70%);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation-delay: -14s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-            }
-            25% {
-                transform: translate(30px, -30px) scale(1.05);
-            }
-            50% {
-                transform: translate(-20px, 20px) scale(0.95);
-            }
-            75% {
-                transform: translate(-30px, -20px) scale(1.02);
-            }
-        }
-
-        /* Container */
+        /* Layout */
         .container {
-            width: 100%;
-            max-width: 1200px;
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 28px;
+        }
+
+        section {
+            padding: 100px 0;
         }
 
         /* Navigation */
@@ -233,2142 +108,2259 @@
             left: 0;
             right: 0;
             z-index: 100;
-            padding: 20px 0;
-            transition: all 0.4s var(--ease-out-expo);
-        }
-
-        nav.scrolled {
-            background: rgba(5, 5, 8, 0.8);
+            padding: 18px 28px;
+            background: rgba(12, 12, 14, 0.8);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--glass-border);
-            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
         }
 
-        .nav-inner {
+        nav .nav-inner {
+            max-width: 1080px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.02em;
-        }
-
-        .nav-links {
+        .nav-logo {
             display: flex;
-            gap: 32px;
-            list-style: none;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: var(--accent);
+            color: var(--bg);
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: -0.03em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
         }
 
-        .nav-links a {
-            color: var(--text-secondary);
+        .nav-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgba(212, 249, 124, 0.3);
+        }
+
+        .nav-cta {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 10px 22px;
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            border-radius: 100px;
             text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 400;
-            transition: color 0.3s ease;
+            cursor: pointer;
+            transition: all 0.25s;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 24px rgba(212, 249, 124, 0.25);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 180px 0 120px;
             position: relative;
         }
 
-        .nav-links a::after {
+        .hero::after {
             content: '';
             position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gradient-primary);
-            transition: width 0.3s var(--ease-out-expo);
+            top: 80px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212,249,124,0.04) 0%, transparent 70%);
+            pointer-events: none;
         }
 
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .mobile-menu-btn span {
-            width: 24px;
-            height: 2px;
-            background: var(--text-primary);
-            transition: all 0.3s ease;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            padding-top: 80px;
-        }
-
-        .hero-content {
-            max-width: 750px;
-        }
-
-        .hero-badge {
+        .hero-label {
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--accent);
+            background: var(--accent-dim);
             padding: 8px 16px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
             border-radius: 100px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 0.8s var(--ease-out-expo) 0.2s forwards;
+            margin-bottom: 32px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            border: 1px solid var(--border-accent);
         }
 
-        .hero-badge .dot {
-            width: 8px;
-            height: 8px;
-            background: #22c55e;
+        .hero-label::before {
+            content: '';
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
+            background: var(--accent);
+            animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
         }
 
         .hero h1 {
             font-family: var(--font-display);
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 800;
-            line-height: 1.05;
+            font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+            font-weight: 700;
+            line-height: 1.12;
             letter-spacing: -0.03em;
-            margin-bottom: 8px;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.8s var(--ease-out-expo) 0.3s forwards;
-        }
-
-        .hero h1 .gradient-text {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-title-sub {
-            font-family: var(--font-display);
-            font-size: clamp(1.5rem, 4vw, 2.25rem);
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.8s var(--ease-out-expo) 0.4s forwards;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 520px;
+            max-width: 780px;
             margin-bottom: 28px;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.8s var(--ease-out-expo) 0.5s forwards;
         }
 
-        .hero-cta {
+        .hero h1 em {
+            font-style: normal;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .hero-sub {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 560px;
+            line-height: 1.7;
+            margin-bottom: 44px;
+        }
+
+        .hero-actions {
             display: flex;
             gap: 16px;
             flex-wrap: wrap;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.8s var(--ease-out-expo) 0.6s forwards;
-        }
-
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 28px;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.4s var(--ease-out-expo);
-            border: none;
         }
 
         .btn-primary {
-            background: var(--gradient-primary);
-            color: var(--bg-deep);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .btn-primary span {
-            position: relative;
-            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 16px 32px;
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            border-radius: 100px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
-        }
-
-        .btn-primary:hover::before {
-            opacity: 1;
+            box-shadow: 0 8px 32px rgba(212, 249, 124, 0.3);
         }
 
         .btn-secondary {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            color: var(--text-primary);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 16px 32px;
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
+            border-color: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.03);
         }
 
-        /* Scroll indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            opacity: 0;
-            animation: fadeUp 0.8s var(--ease-out-expo) 1s forwards;
-        }
-
-        .scroll-indicator .mouse {
-            width: 24px;
-            height: 38px;
-            border: 2px solid var(--text-muted);
-            border-radius: 12px;
-            position: relative;
-        }
-
-        .scroll-indicator .wheel {
-            position: absolute;
-            top: 8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 8px;
-            background: var(--accent-cyan);
-            border-radius: 2px;
-            animation: scroll 2s ease-in-out infinite;
-        }
-
-        @keyframes scroll {
-            0%, 100% { opacity: 1; transform: translateX(-50%) translateY(0); }
-            50% { opacity: 0.3; transform: translateX(-50%) translateY(10px); }
-        }
-
-        /* Section styles */
-        section {
+        /* Proof bar */
+        .proof-bar {
             padding: 40px 0;
-            position: relative;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
 
-        section.page-section {
-            padding: 50px 0;
+        .proof-bar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
         }
 
-        .section-header {
+        .proof-item {
             text-align: center;
-            margin-bottom: 40px;
         }
 
-        .section-label {
-            display: inline-block;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--accent-cyan);
+        .proof-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.03em;
+        }
+
+        .proof-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        /* Problems section */
+        .problems {
+            background: linear-gradient(180deg, var(--bg) 0%, rgba(20,20,24,0.5) 100%);
+        }
+
+        .section-eyebrow {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 12px;
+            letter-spacing: 0.12em;
+            margin-bottom: 16px;
         }
 
         .section-title {
             font-family: var(--font-display);
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
             font-weight: 700;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            margin-bottom: 20px;
         }
 
-        /* About */
-        .about {
-            background: var(--bg-deep);
-        }
-
-        .about-wrapper {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-headline {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 2.75rem);
-            font-weight: 700;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .about-text p {
-            color: var(--text-secondary);
+        .section-desc {
             font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 600px;
             line-height: 1.7;
-            margin-bottom: 14px;
+            margin-bottom: 56px;
         }
 
-        .about-text p strong {
-            color: var(--text-primary);
-            font-weight: 500;
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-        .about-lead {
-            font-size: 1.15rem !important;
-            color: var(--text-primary) !important;
-            font-weight: 500;
+        .problem-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
         }
 
-        .about-highlight {
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .problem-card:hover {
+            border-color: var(--border-accent);
+            background: var(--bg-card-hover);
+            transform: translateY(-3px);
+        }
+
+        .problem-card:hover::before { opacity: 1; }
+
+        .problem-icon {
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .problem-card h3 {
             font-family: var(--font-display);
-            font-size: 1.25rem !important;
+            font-size: 1.15rem;
             font-weight: 600;
-            color: var(--accent-cyan) !important;
-            margin-top: 20px !important;
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
         }
 
-        .about-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .problem-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.65;
         }
 
-        .about-journey {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            padding: 32px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+        /* Industry examples */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
         }
 
-        .journey-item {
+        .industry-grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .industry-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+            transition: all 0.3s;
+        }
+
+        .industry-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .industry-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .industry-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .industry-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .industry-result {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* Section subtitle */
+        .section-subtitle {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 64px;
+            margin-bottom: 32px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Human control badge */
+        .human-control {
             display: flex;
             align-items: center;
             gap: 16px;
-            padding: 14px 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            transition: all 0.4s var(--ease-out-expo);
+            padding: 24px 32px;
+            background: var(--accent-dim);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius);
+            margin-top: 32px;
         }
 
-        .journey-item:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .journey-item.active {
-            background: var(--gradient-glow);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
-        }
-
-        .journey-icon {
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--glass-bg);
-            border-radius: 11px;
+        .human-control-icon {
+            font-size: 1.5rem;
             flex-shrink: 0;
         }
 
-        .journey-item.active .journey-icon {
-            background: var(--gradient-primary);
+        .human-control p {
+            font-size: 0.92rem;
+            color: var(--text);
+            line-height: 1.6;
         }
 
-        .journey-icon svg {
-            width: 22px;
-            height: 22px;
-            stroke: var(--accent-cyan);
+        .human-control strong {
+            color: var(--accent);
         }
 
-        .journey-item.active .journey-icon svg {
-            stroke: var(--bg-deep);
+        /* ROI Box */
+        .roi-section {
+            background: linear-gradient(180deg, rgba(20,20,24,0.5) 0%, var(--bg) 100%);
         }
 
-        .journey-item span {
-            font-size: 1.05rem;
-            font-weight: 500;
-            color: var(--text-secondary);
+        .roi-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius);
+            padding: 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .journey-item.active span {
-            color: var(--text-primary);
+        .roi-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent);
         }
 
-        .journey-arrow {
+        .roi-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .roi-item {
+            text-align: center;
+        }
+
+        .roi-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .roi-label {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .roi-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+            position: relative;
+        }
+
+        .testimonial-card.placeholder {
+            border-style: dashed;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            padding: 0 20px;
+            text-align: center;
+            min-height: 200px;
         }
 
-        .journey-arrow svg {
-            width: 22px;
-            height: 22px;
-            stroke: var(--text-muted);
-            transform: rotate(90deg);
+        .testimonial-quote {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text);
+            font-style: italic;
         }
 
-        @media (max-width: 968px) {
-            .about-wrapper {
+        .testimonial-quote::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            line-height: 0;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--accent-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .testimonial-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .testimonial-info span {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .placeholder-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .placeholder-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 900px) {
+            .industry-grid-3 {
                 grid-template-columns: 1fr;
-                gap: 28px;
-            }
-
-            .about-journey {
-                width: 100%;
-                max-width: 380px;
-                margin: 0 auto;
             }
         }
 
-        @media (max-width: 480px) {
-            .about-journey {
-                max-width: 100%;
+        @media (max-width: 768px) {
+            .industry-grid,
+            .roi-grid,
+            .testimonials-grid,
+            .case-study-carousel {
+                grid-template-columns: 1fr;
             }
         }
 
         /* Services */
-        .services {
-            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-primary) 50%, var(--bg-deep) 100%);
-        }
-
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .services-grid + .services-grid {
-            margin-top: 20px;
+            grid-template-columns: 1fr;
+            gap: 24px;
         }
 
         .service-card {
-            position: relative;
-            padding: 24px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 18px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            transition: all 0.5s var(--ease-out-expo);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-glow);
-            opacity: 0;
-            transition: opacity 0.5s ease;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 48px 44px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            transition: all 0.3s;
         }
 
         .service-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.15);
+            border-color: var(--border-accent);
         }
 
-        .service-card:hover::before {
-            opacity: 0.05;
-        }
-
-        .service-header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .service-icon {
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--gradient-primary);
-            border-radius: 12px;
-            flex-shrink: 0;
-        }
-
-        .service-icon svg {
-            width: 22px;
-            height: 22px;
-            stroke: var(--bg-deep);
-            stroke-width: 2;
-            fill: none;
-        }
-
-        .service-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.15rem;
-            font-weight: 600;
-            position: relative;
-            z-index: 1;
-            margin: 0;
-        }
-
-        .service-card p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.55;
-            position: relative;
-            z-index: 1;
-            flex: 1;
+        .service-card-compact {
+            grid-template-columns: 1fr;
         }
 
         .service-tag {
             display: inline-block;
-            margin-top: 12px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            background: var(--accent-dim);
             padding: 5px 12px;
-            background: rgba(0, 212, 255, 0.1);
-            border: 1px solid rgba(0, 212, 255, 0.2);
-            border-radius: 6px;
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            position: relative;
-            z-index: 1;
-            align-self: flex-start;
-        }
-
-        @media (max-width: 968px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Tech Stack */
-        .tech-stack {
-            background: var(--bg-deep);
-        }
-
-        .tech-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px;
-            max-width: 950px;
-            margin: 0 auto;
-        }
-
-        .tech-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 24px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
             border-radius: 100px;
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--text-primary);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            transition: all 0.4s var(--ease-out-expo);
+            margin-bottom: 18px;
+            border: 1px solid var(--border-accent);
         }
 
-        .tech-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--accent-cyan);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
-        }
-
-        .tech-item .tech-icon {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tech-item .tech-icon svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        /* Process */
-        .process {
-            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-primary) 100%);
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .process-step {
-            position: relative;
-            padding: 28px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 18px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            transition: all 0.4s var(--ease-out-expo);
-        }
-
-        .process-step:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .process-number {
+        .service-card h3 {
             font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 12px;
-            line-height: 1;
-        }
-
-        .process-step h3 {
-            font-family: var(--font-display);
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .process-step p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.55;
-        }
-
-        @media (max-width: 968px) {
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* FAQ */
-        .faq {
-            background: var(--bg-deep);
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .faq-grid .faq-item:last-child {
-            grid-column: 1 / -1;
-            max-width: 440px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            padding: 24px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            transition: all 0.4s var(--ease-out-expo);
-        }
-
-        .faq-item:hover {
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .faq-item h3 {
-            font-family: var(--font-display);
-            font-size: 1.05rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--accent-cyan);
-        }
-
-        .faq-item p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 700px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-            .faq-grid .faq-item:last-child {
-                max-width: 100%;
-            }
-        }
-
-        /* Contact */
-        .contact {
-            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-primary) 100%);
-        }
-
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-
-        .contact-info h2 {
-            font-family: var(--font-display);
-            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 16px;
             letter-spacing: -0.02em;
+            margin-bottom: 14px;
+            line-height: 1.25;
         }
 
-        .contact-info p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
+        .service-card > div:first-child p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
             margin-bottom: 24px;
         }
 
-        .contact-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
+        .service-example {
+            background: rgba(212, 249, 124, 0.03);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-sm);
+            padding: 24px 28px;
         }
 
-        .contact-link {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 16px 18px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 14px;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.4s var(--ease-out-expo);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-
-        .contact-link:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .contact-link-icon {
-            width: 42px;
-            height: 42px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--gradient-primary);
-            border-radius: 11px;
-            flex-shrink: 0;
-        }
-
-        .contact-link-icon svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--bg-deep);
-            stroke-width: 2;
-            fill: none;
-        }
-
-        .contact-link-text {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .contact-link-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .contact-link-value {
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        /* Contact Form */
-        .contact-form-wrapper {
-            padding: 28px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .contact-form h3 {
-            font-family: var(--font-display);
-            font-size: 1.35rem;
+        .service-example-label {
+            font-size: 0.72rem;
             font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
             margin-bottom: 14px;
         }
 
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 6px;
+        .example-before-after {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--glass-border);
-            border-radius: 10px;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
+        .example-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.88rem;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent-cyan);
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+        .example-row .tag {
+            flex-shrink: 0;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-top: 2px;
         }
 
-        .form-group textarea {
-            resize: none;
-            height: 80px;
+        .tag-before {
+            background: rgba(255, 100, 100, 0.12);
+            color: #ff8a8a;
+            border: 1px solid rgba(255, 100, 100, 0.2);
         }
 
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
+        .tag-after {
+            background: var(--accent-dim);
+            color: var(--accent);
+            border: 1px solid var(--border-accent);
+        }
+
+        .example-row span:last-child {
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .service-price {
+            margin-top: 24px;
+            font-size: 0.85rem;
             color: var(--text-muted);
         }
 
-        .btn-submit {
-            width: 100%;
-            justify-content: center;
+        .service-price strong {
+            color: var(--text);
+            font-size: 1.1rem;
         }
 
-        .btn-submit:disabled {
+        /* How it works */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            counter-reset: step;
+        }
+
+        .step {
+            counter-increment: step;
+            position: relative;
+            padding: 32px 24px;
+        }
+
+        .step::before {
+            content: counter(step);
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--accent);
+            opacity: 0.1;
+            line-height: 1;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .step h4 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Case study carousel */
+        .case-study-carousel {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        /* Case study */
+        .case-study-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 56px 52px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), rgba(212,249,124,0.2));
+        }
+
+        .case-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        .case-meta-badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            background: var(--accent-dim);
+            padding: 5px 12px;
+            border-radius: 100px;
+            border: 1px solid var(--border-accent);
+        }
+
+        .case-study-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+            line-height: 1.3;
+        }
+
+        .case-study-card > p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            max-width: 700px;
+            margin-bottom: 36px;
+        }
+
+        .case-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+        }
+
+        .case-result {
+            padding: 24px;
+            background: rgba(212, 249, 124, 0.03);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-sm);
+        }
+
+        .case-result-number {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .case-result-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .about-text p {
+            font-size: 1.02rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .about-text p strong {
+            color: var(--text);
+        }
+
+        .tech-stack {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+        }
+
+        .tech-stack h4 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-muted);
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            color: var(--text-muted);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 100px 0 120px;
+        }
+
+        .cta-section .section-title {
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+
+        .cta-section .section-desc {
+            max-width: 500px;
+            margin: 0 auto 56px;
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 40px;
+            align-items: start;
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .cta-option {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            transition: all 0.3s;
+        }
+
+        .cta-option:hover {
+            border-color: var(--border-accent);
+        }
+
+        .cta-option-icon {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-option h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .cta-option > p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .cta-divider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            gap: 12px;
+        }
+
+        .cta-divider-line {
+            width: 1px;
+            height: 40px;
+            background: var(--border);
+        }
+
+        .cta-divider span {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        /* Calendly embed */
+        .calendly-inline-widget {
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            min-height: 320px;
+        }
+
+        /* Form styles */
+        .form-input {
+            display: block;
+            width: 100%;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            padding: 13px 16px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text);
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: var(--accent);
+            background: rgba(212, 249, 124, 0.03);
+        }
+
+        .form-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .form-submit {
+            width: 100%;
+            justify-content: center;
+            margin-top: 4px;
+        }
+
+        .form-note {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .form-status {
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            margin-top: 12px;
+            display: none;
+        }
+
+        .form-status.success {
+            display: block;
+            background: rgba(212, 249, 124, 0.1);
+            border: 1px solid var(--border-accent);
+            color: var(--accent);
+        }
+
+        .form-status.error {
+            display: block;
+            background: rgba(255, 100, 100, 0.1);
+            border: 1px solid rgba(255, 100, 100, 0.2);
+            color: #ff8a8a;
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-left {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-left a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-right a {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-right a:hover { color: var(--accent); }
+
+        /* Chatbot Widget */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 8px 32px rgba(212, 249, 124, 0.3);
+            transition: all 0.3s ease;
+            color: var(--bg);
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot-toggle.active .chat-icon { display: none; }
+        .chatbot-toggle .close-icon { display: none; }
+        .chatbot-toggle.active .close-icon { display: block; }
+
+        .chatbot-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 380px;
+            max-height: 520px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chatbot-window.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .chatbot-header {
+            padding: 18px 20px;
+            background: var(--accent);
+            color: var(--bg);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chatbot-header::before {
+            content: '';
+        }
+
+        .chatbot-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chatbot-message {
+            padding: 14px 18px;
+            border-radius: 16px;
+            font-size: 0.9rem;
+            line-height: 1.55;
+            max-width: 90%;
+        }
+
+        .chatbot-message.bot {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid var(--border);
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .chatbot-message.user {
+            background: var(--accent);
+            color: var(--bg);
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chatbot-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .chatbot-option {
+            padding: 12px 18px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 0.88rem;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            font-family: var(--font-body);
+        }
+
+        .chatbot-option:hover {
+            background: var(--accent-dim);
+            border-color: var(--border-accent);
+        }
+
+        .chatbot-option.cta {
+            background: var(--accent);
+            color: var(--bg);
+            font-weight: 600;
+            border-color: var(--accent);
+        }
+
+        .chatbot-option.cta:hover {
+            box-shadow: 0 4px 16px rgba(212, 249, 124, 0.3);
+        }
+
+        .chatbot-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--font-body);
+            margin-top: 12px;
+        }
+
+        .chatbot-back:hover {
+            border-color: var(--text-muted);
+            color: var(--text);
+        }
+
+        /* Chatbot form */
+        .chatbot-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .chatbot-form input,
+        .chatbot-form textarea {
+            padding: 12px 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-size: 0.88rem;
+            color: var(--text);
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chatbot-form input:focus,
+        .chatbot-form textarea:focus {
+            border-color: var(--accent);
+        }
+
+        .chatbot-form input::placeholder,
+        .chatbot-form textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .chatbot-form textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .chatbot-form button {
+            padding: 12px 18px;
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: all 0.2s;
+        }
+
+        .chatbot-form button:hover {
+            box-shadow: 0 4px 16px rgba(212, 249, 124, 0.3);
+        }
+
+        .chatbot-form button:disabled {
             opacity: 0.6;
             cursor: not-allowed;
         }
 
-        .form-status {
-            margin-top: 16px;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .form-status.success {
-            color: #22c55e;
-        }
-
-        .form-status.error {
-            color: #ef4444;
-        }
-
-        /* Footer inline (inside contact section) */
-        .footer-inline {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid var(--glass-border);
-        }
-
-        .footer-text {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .footer-text span {
-            color: var(--accent-cyan);
-        }
-
-        .footer-ico {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            .footer-inline {
-                flex-direction: column;
-                gap: 8px;
-                text-align: center;
-            }
-        }
-
         /* Responsive */
-        @media (max-width: 968px) {
-            .contact-wrapper {
+        @media (max-width: 900px) {
+            .service-card { grid-template-columns: 1fr; gap: 32px; }
+            .steps { grid-template-columns: repeat(2, 1fr); }
+            .about-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 760px) {
+            .cta-grid {
                 grid-template-columns: 1fr;
-                gap: 36px;
+                gap: 24px;
+            }
+            .cta-divider {
+                flex-direction: row;
+                padding: 8px 0;
+            }
+            .cta-divider-line {
+                width: 40px;
+                height: 1px;
             }
         }
 
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                background: rgba(5, 5, 8, 0.95);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                padding: 24px;
-                gap: 16px;
-                border-bottom: 1px solid var(--glass-border);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            .mobile-menu-btn.active span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-
-            .mobile-menu-btn.active span:nth-child(2) {
-                opacity: 0;
-            }
-
-            .mobile-menu-btn.active span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
-
-            .hero {
-                padding: 80px 0 40px;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 80px 0;
-            }
-
-            .scroll-indicator {
-                display: none;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                gap: 16px;
-                text-align: center;
-            }
+        @media (max-width: 600px) {
+            section { padding: 72px 0; }
+            .hero { padding: 140px 0 80px; }
+            .steps { grid-template-columns: 1fr; }
+            .proof-bar-inner { gap: 32px; }
+            .service-card { padding: 32px 28px; }
+            .case-study-card { padding: 36px 28px; }
+            .case-results { grid-template-columns: 1fr 1fr; }
         }
 
-        /* Animations on scroll */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s var(--ease-out-expo);
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
-        .reveal-delay-4 { transition-delay: 0.4s; }
-        .reveal-delay-5 { transition-delay: 0.5s; }
-
-        /* Section Navigation Dots */
-        .section-nav {
-            position: fixed;
-            right: 30px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 99;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .section-nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--glass-border);
-            border: 2px solid transparent;
-            cursor: pointer;
-            transition: all 0.3s var(--ease-out-expo);
-            position: relative;
-        }
-
-        .section-nav-dot::before {
-            content: attr(data-label);
-            position: absolute;
-            right: 24px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: var(--bg-primary);
-            border: 1px solid var(--glass-border);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .section-nav-dot:hover::before {
-            opacity: 1;
-        }
-
-        .section-nav-dot:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .section-nav-dot.active {
-            background: var(--accent-cyan);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 0 12px var(--accent-cyan);
-        }
-
-        @media (max-width: 768px) {
-            .section-nav {
-                display: none;
-            }
-        }
-
-        /* Small mobile devices */
         @media (max-width: 480px) {
-            .container {
-                padding: 0 16px;
+            .chatbot-widget {
+                bottom: 16px;
+                right: 16px;
             }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-title-sub {
-                font-size: 1.25rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .about-headline {
-                font-size: 1.75rem;
-            }
-
-            .about-text p {
-                font-size: 0.95rem;
-            }
-
-            .service-card {
-                padding: 18px;
-            }
-
-            .process-step {
-                padding: 20px;
-            }
-
-            .process-number {
-                font-size: 2rem;
-            }
-
-            .tech-item {
-                padding: 10px 16px;
-                font-size: 0.9rem;
-            }
-
-            .tech-grid {
-                gap: 10px;
-            }
-
-            .faq-item {
-                padding: 18px;
-            }
-
-            .faq-item h3 {
-                font-size: 0.95rem;
-            }
-
-            .faq-item p {
-                font-size: 0.9rem;
-            }
-
-            .contact-info h2 {
-                font-size: 1.5rem;
-            }
-
-            .contact-links {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-
-            .contact-link {
-                padding: 14px;
-            }
-
-            .contact-form-wrapper {
-                padding: 20px;
-            }
-
-            .btn {
-                padding: 12px 20px;
-                font-size: 0.95rem;
-            }
-
-            .about-journey {
-                padding: 20px;
-            }
-
-            .journey-item {
-                padding: 12px 16px;
-            }
-
-            .section-header {
-                margin-bottom: 28px;
+            .chatbot-window {
+                width: calc(100vw - 32px);
+                right: -8px;
+                max-height: 70vh;
             }
         }
 
-        /* Custom Calendly Modal */
-        .calendly-modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s var(--ease-out-expo);
+        /* Animations */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .calendly-modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
+        .hero-label, .hero h1, .hero-sub, .hero-actions {
+            animation: fadeUp 0.7s ease-out both;
         }
-
-        .calendly-modal {
-            position: relative;
-            width: 100%;
-            max-width: 1000px;
-            height: 95vh;
-            background: var(--bg-primary);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5), 0 0 80px rgba(0, 212, 255, 0.1);
-            transform: scale(0.9) translateY(20px);
-            transition: transform 0.4s var(--ease-out-expo);
-        }
-
-        .calendly-modal-overlay.active .calendly-modal {
-            transform: scale(1) translateY(0);
-        }
-
-        .calendly-modal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 24px;
-            border-bottom: 1px solid var(--glass-border);
-            background: var(--glass-bg);
-        }
-
-        .calendly-modal-title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .calendly-modal-close {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .calendly-modal-close:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--accent-cyan);
-        }
-
-        .calendly-modal-close svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--text-primary);
-            stroke-width: 2;
-        }
-
-        .calendly-modal-body {
-            height: calc(100% - 81px);
-        }
-
-        .calendly-modal-body iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        @media (max-width: 768px) {
-            .calendly-modal {
-                max-height: 85vh;
-                border-radius: 16px;
-            }
-        }
+        .hero h1 { animation-delay: 0.1s; }
+        .hero-sub { animation-delay: 0.2s; }
+        .hero-actions { animation-delay: 0.3s; }
     </style>
 </head>
 <body>
-    <!-- Liquid Background -->
-    <div class="liquid-bg">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
 
-    <!-- Navigation -->
+    <!-- NAV -->
     <nav>
-        <div class="container">
-            <div class="nav-inner">
-                <a href="#hero" class="logo">BK</a>
-                <ul class="nav-links">
-                    <li><a href="#about">O mně</a></li>
-                    <li><a href="#services">Služby</a></li>
-                    <li><a href="#process">Proces</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">BK</a>
+            <a href="#kontakt" class="nav-cta">Probrat spolupráci</a>
         </div>
     </nav>
 
-    <!-- Page Container -->
-    <div class="page-container" id="pageContainer">
-
-    <!-- Hero Section -->
-    <section class="hero page-section" id="hero">
+    <!-- HERO -->
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="dot"></span>
-                    Dostupný pro nové projekty
-                </div>
-                <h1>
-                    Bronislav<br>
-                    <span class="gradient-text">Klus</span>
-                </h1>
-                <p class="hero-title-sub">AI & Automation Developer</p>
-                <p>Pomáhám firmám automatizovat procesy, integrovat AI a budovat inteligentní systémy. Specializuji se na Python, n8n a moderní AI technologie.</p>
-                <div class="hero-cta">
-                    <a href="#" onclick="openCalendly();return false;" class="btn btn-primary">
-                        <span>Domluvme si call</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#services" class="btn btn-secondary">
-                        Prozkoumat služby
-                    </a>
-                </div>
+            <div class="hero-label">AI vývojář pro české firmy</div>
+            <h1>Vaši lidé dělají práci,<br>kterou by <em>měl dělat stroj</em></h1>
+            <p class="hero-sub">
+                Stavím AI systémy pro malé a střední firmy. Zpracování dokumentů,
+                firemní data, reporty — to co vám dnes zabere hodiny,
+                bude trvat minuty. <strong>Klienti běžně ušetří 40+ hodin měsíčně.</strong>
+            </p>
+            <div class="hero-actions">
+                <a href="#kontakt" class="btn-primary">Probrat, co dává smysl →</a>
+                <a href="#jak-to-funguje" class="btn-secondary">Jak to funguje</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll</span>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about page-section" id="about">
+
+    <!-- PROBLEMS -->
+    <section class="problems" id="problemy">
         <div class="container">
-            <div class="about-wrapper">
-                <div class="about-content reveal">
-                    <span class="section-label">O mně</span>
-                    <h2 class="about-headline">Od Excelu k AI řešením</h2>
-
-                    <div class="about-text">
-                        <p class="about-lead">Všechno začalo frustrací.</p>
-
-                        <p>Díval jsem se, jak kolegové tráví hodiny kopírováním dat z jednoho systému do druhého. Ručně. Pořád dokola. Věděl jsem, že to musí jít jinak.</p>
-
-                        <p>Začal jsem s <strong>Excelem</strong> — vzorce, makra, věci, kterým se ostatní vyhýbali. Pak přišel <strong>Python</strong> — backend, API, databáze. Z člověka, který "znal Excel", se stal vývojář.</p>
-
-                        <p class="about-highlight">A pak přišla AI.</p>
-
-                        <p>Claude, GPT, automatizace, které ještě nedávno zněly jako sci-fi. Chatboty, co rozumí kontextu. Systémy, které se učí. Workflow, které běží samy.</p>
-
-                        <p class="about-lead">Dnes pomáhám firmám automatizovat to, co je brzdí.</p>
-                    </div>
+            <div class="section-eyebrow">Znáte to?</div>
+            <h2 class="section-title">Tohle řeší většina českých firem</h2>
+            <p class="section-desc">
+                Neříkám vám, že ušetříte X hodin. Říkám vám přesně,
+                kde ve vaší firmě AI dává smysl — a kde ne.
+            </p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <span class="problem-icon">🔄</span>
+                    <h3>Systémy, které spolu nemluví</h3>
+                    <p>Fakturace v jednom nástroji, CRM v druhém, sklad ve třetím. Data se kopírují ručně. Vždy se něco ztratí.</p>
                 </div>
-
-                <div class="about-visual reveal reveal-delay-2">
-                    <div class="about-journey">
-                        <div class="journey-item">
-                            <div class="journey-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                    <path d="M3 9h18M9 21V9"/>
-                                </svg>
-                            </div>
-                            <span>Excel & VBA</span>
-                        </div>
-                        <div class="journey-arrow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </div>
-                        <div class="journey-item">
-                            <div class="journey-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="16 18 22 12 16 6"/>
-                                    <polyline points="8 6 2 12 8 18"/>
-                                </svg>
-                            </div>
-                            <span>Python</span>
-                        </div>
-                        <div class="journey-arrow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </div>
-                        <div class="journey-item active">
-                            <div class="journey-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
-                                </svg>
-                            </div>
-                            <span>AI & Automation</span>
-                        </div>
-                    </div>
+                <div class="problem-card">
+                    <span class="problem-icon">📈</span>
+                    <h3>Co stačilo, už nestačí</h3>
+                    <p>Co fungovalo pro 10 lidí, padá při 50. Ruční práce roste rychleji než tým.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">📊</span>
+                    <h3>Přehled mizí s růstem</h3>
+                    <p>Dřív jste věděli všechno. Teď máte 30 lidí a nevíte, co se kde děje. Rozhodujete naslepo.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">⚖️</span>
+                    <h3>Kvalita vs. objem</h3>
+                    <p>Zvládáte víc zakázek, ale chybovost roste. Ruční kontrola nestíhá. Klienti to poznají.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">🎯</span>
+                    <h3>Delegování bez systému</h3>
+                    <p>Chcete předat odpovědnost, ale není kam. Chybí procesy, které by to držely pohromadě.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-icon">⏱️</span>
+                    <h3>Kvalifikovaní lidé na nekvalifikované práci</h3>
+                    <p>Váš nejlepší člověk tráví hodiny vyplňováním tabulek místo toho, aby dělal to, co umí.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services page-section" id="services">
+    <!-- SEKCE "CO PŘESNĚ DĚLÁM" - SKRYTÁ PRO POZDĚJŠÍ ÚPRAVY -->
+    <section id="sluzby" style="display:none !important;">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Co nabízím</span>
-                <h2 class="section-title">Co pro vás mohu udělat</h2>
+            <div class="section-eyebrow">Co přesně dělám</div>
+            <h2 class="section-title">Tři problémy, které řeším nejčastěji</h2>
+            <p class="section-desc">
+                Nemusíte být tech firma. Stačí mít proces, který vás zdržuje.
+            </p>
+
+            <!-- 3 USE CASES -->
+            <div class="industry-grid industry-grid-3">
+                <div class="industry-card">
+                    <div class="industry-icon">📄</div>
+                    <h3>Dokumenty a objednávky</h3>
+                    <p>
+                        Faktury, poptávky, objednávky — ručně se přepisují do systému. Každý den.
+                    </p>
+                    <div class="industry-result">→ Automaticky, bez chyb, bez zdržení</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🧠</div>
+                    <h3>Know-how ve firmě</h3>
+                    <p>
+                        Postupy jsou v hlavách lidí. Co když onemocní? Co když odejdou?
+                    </p>
+                    <div class="industry-result">→ AI asistent, který zná vaše postupy</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">📊</div>
+                    <h3>Reporting pro vedení</h3>
+                    <p>
+                        Data existují, ale nikdo je nesbírá. Než vznikne report, je pozdě.
+                    </p>
+                    <div class="industry-result">→ Automatické reporty, rozhodování na datech</div>
+                </div>
             </div>
-            <!-- Top row - 3 services -->
+
+            <!-- Human control badge -->
+            <div class="human-control">
+                <div class="human-control-icon">👤</div>
+                <p>
+                    <strong>Člověk zůstává v kontrole.</strong>
+                    Automatizace a AI zpracují rutinu a připraví podklady —
+                    finální rozhodnutí je vždy na vás.
+                </p>
+            </div>
+
+            <!-- SERVICES -->
+            <h3 class="section-subtitle">Jak to řeším</h3>
+
             <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card reveal reveal-delay-1">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
-                                <circle cx="8.5" cy="14.5" r="1.5"/>
-                                <circle cx="15.5" cy="14.5" r="1.5"/>
-                            </svg>
+                <!-- SERVICE 1: AUTOMATIZACE -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Automatizace procesů</div>
+                        <h3>Propojím vaše systémy a&nbsp;odstraním ruční práci</h3>
+                        <p>
+                            Fakturace, CRM, e-maily, Slack, tabulky nebo interní systémy.
+                            Navrhnu a nastavím workflow, které spolehlivě přenáší data
+                            mezi nástroji a nahrazuje rutinní úkony.
+                            Bez zásahů do existující infrastruktury.
+                        </p>
+                        <div class="service-price">
+                            Typicky <strong>od 15 000 Kč</strong> · hotovo za dny
                         </div>
-                        <h3>AI Integrace</h3>
                     </div>
-                    <p>Ušetříte hodiny denně. AI odpovídá, analyzuje a připravuje podklady za vás.</p>
-                    <span class="service-tag">Claude API • OpenAI</span>
+                    <div class="service-example">
+                        <div class="service-example-label">Příklad typické situace</div>
+                        <div class="example-before-after">
+                            <div class="example-row">
+                                <span class="tag tag-before">Dříve</span>
+                                <span>Asistentka ručně přepisuje příchozí objednávky z emailu do fakturačního systému. 45 minut denně, každý den.</span>
+                            </div>
+                            <div class="example-row">
+                                <span class="tag tag-after">Teď</span>
+                                <span>Email přijde → systém automaticky vytáhne data → vytvoří fakturu → pošle potvrzení. 0 minut denně.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="service-card reveal reveal-delay-2">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-                                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
-                            </svg>
+                <!-- SERVICE 2: AI SYSTÉMY -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">AI systémy na míru</div>
+                        <h3>Navrhnu inteligentní systém, který pracuje s&nbsp;vašimi daty a&nbsp;pomáhá rozhodovat</h3>
+                        <p>
+                            Interní AI asistenti nad firemními daty, scoring a prioritizace,
+                            analytické a doporučovací systémy. Řešení stavěná na míru
+                            v Pythonu, napojená na komerční i open-source modely —
+                            podle konkrétního cíle.
+                        </p>
+                        <div class="service-price">
+                            Rozsah a cena <strong>podle konzultace</strong> · typicky 3–8 týdnů
                         </div>
-                        <h3>Automatizace procesů</h3>
                     </div>
-                    <p>Procesy, které zabíraly hodiny, běží samy. Méně chyb, více času na růst.</p>
-                    <span class="service-tag">n8n • Workflows</span>
+                    <div class="service-example">
+                        <div class="service-example-label">Příklad typické situace</div>
+                        <div class="example-before-after">
+                            <div class="example-row">
+                                <span class="tag tag-before">Dříve</span>
+                                <span>Firma má data, ale rozhodování je založené hlavně na zkušenosti a odhadech. Analýzy vznikají ručně, pozdě, nebo vůbec.</span>
+                            </div>
+                            <div class="example-row">
+                                <span class="tag tag-after">Teď</span>
+                                <span>AI analyzuje historická data a kontext → připraví doporučení nebo scénáře → člověk rozhoduje rychleji a s větší jistotou.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="service-card reveal reveal-delay-3">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <polyline points="16 18 22 12 16 6"/>
-                                <polyline points="8 6 2 12 8 18"/>
-                                <line x1="12" y1="2" x2="12" y2="22"/>
-                            </svg>
+                <!-- SERVICE 3: ARCHITEKTURA -->
+                <div class="service-card service-card-compact">
+                    <div>
+                        <div class="service-tag">Datová & AI architektura</div>
+                        <h3>Pomůžu vám navrhnout technický základ, na&nbsp;kterém automatizace i&nbsp;AI dávají dlouhodobě smysl</h3>
+                        <p>
+                            Návrh architektury, datových toků a hranic mezi automatizací,
+                            AI a lidským rozhodováním. Vhodné pro firmy, které chtějí
+                            stavět systémově, ne lepit řešení ad-hoc.
+                        </p>
+                        <div class="service-price">
+                            Typicky formou <strong>úvodní analýzy</strong> nebo dlouhodobé spolupráce
                         </div>
-                        <h3>Django/Python vývoj</h3>
                     </div>
-                    <p>Systém, který přesně sedí vašemu businessu. Žádné kompromisy, žádné limity.</p>
-                    <span class="service-tag">Python • Django</span>
-                </div>
-            </div>
-
-            <!-- Bottom row - 3 services -->
-            <div class="services-grid">
-                <!-- Service 4 -->
-                <div class="service-card reveal reveal-delay-4">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                                <line x1="16" y1="13" x2="8" y2="13"/>
-                                <line x1="16" y1="17" x2="8" y2="17"/>
-                                <polyline points="10 9 9 9 8 9"/>
-                            </svg>
-                        </div>
-                        <h3>OCR & zpracování dat</h3>
-                    </div>
-                    <p>Konec přepisování. Faktury, smlouvy, formuláře — data v systému během sekund.</p>
-                    <span class="service-tag">Automatizace dat</span>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-card reveal reveal-delay-5">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                                <path d="M8 10h.01M12 10h.01M16 10h.01"/>
-                            </svg>
-                        </div>
-                        <h3>AI Chatboti</h3>
-                    </div>
-                    <p>Zákaznická podpora 24/7 bez náboru. Rychlejší odpovědi, spokojenější zákazníci.</p>
-                    <span class="service-tag">Zákaznická podpora</span>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card reveal reveal-delay-5">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="M21 21l-4.35-4.35"/>
-                                <path d="M11 8v6M8 11h6"/>
-                            </svg>
-                        </div>
-                        <h3>RAG & Knowledge Base</h3>
-                    </div>
-                    <p>Odpověď na jakoukoli otázku o firmě za vteřiny. Znalosti dostupné všem, kdykoli.</p>
-                    <span class="service-tag">pgvector • Supabase</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack page-section" id="tech">
+    <!-- HOW IT WORKS -->
+    <section id="jak-to-funguje">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Technologie</span>
-                <h2 class="section-title">Nástroje, které používám</h2>
+            <div class="section-eyebrow">Spolupráce</div>
+            <h2 class="section-title">Jak to vypadá v praxi</h2>
+            <p class="section-desc">
+                Žádné měsíce analýz. Žádné 50stránkové nabídky.
+                Prostě si zavoláme a zjistíme, jak vám dokážu pomoct.
+            </p>
+            <div class="steps">
+                <div class="step">
+                    <h4>Zavoláme si</h4>
+                    <p>30 minut. Řeknete mi, co vás trápí. Já řeknu, jestli a jak to AI vyřeší. Nezávazně, zdarma.</p>
+                </div>
+                <div class="step">
+                    <h4>Navrhnu řešení</h4>
+                    <p>Do 3 dnů dostanete konkrétní návrh — co, jak, za kolik, a hlavně jaký to bude mít dopad.</p>
+                </div>
+                <div class="step">
+                    <h4>Postavím a otestuju</h4>
+                    <p>Stavím na svém prostředí, ne na vašem. Než cokoliv zapnu naostro, běží systém v tichém režimu — vidíte co dělá, ale nic vám nemění.</p>
+                </div>
+                <div class="step">
+                    <h4>Předám a podpořím</h4>
+                    <p>Naučím vaše lidi s tím pracovat. Měsíc podpory v ceně. Potom se rozhodnete, jestli pokračujeme.</p>
+                </div>
             </div>
-            <div class="tech-grid reveal">
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
+            <p style="font-size: 0.92rem; color: var(--text-muted); max-width: 640px; line-height: 1.75; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border);">
+                U většiny spoluprací začínáme menším, jasně vymezeným řešením, které má smysl samo o sobě. Další kroky stavíme jen tam, kde dávají ekonomický smysl.
+            </p>
+
+            <!-- Human control badge -->
+            <div class="human-control">
+                <div class="human-control-icon">👤</div>
+                <p>
+                    <strong>Člověk zůstává v kontrole.</strong>
+                    Automatizace a AI zpracují rutinu a připraví podklady —
+                    finální rozhodnutí je vždy na vás.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI BOX -->
+    <section class="roi-section">
+        <div class="container">
+            <div class="roi-box">
+                <h2 class="roi-title">Návratnost investice</h2>
+                <div class="roi-grid">
+                    <div class="roi-item">
+                        <div class="roi-number">40+</div>
+                        <div class="roi-label">hodin měsíčně<br>ušetřeno na rutině</div>
                     </div>
-                    Python
+                    <div class="roi-item">
+                        <div class="roi-number">0</div>
+                        <div class="roi-label">chyb z únavy<br>nebo přehlédnutí</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-number">&lt; 6</div>
+                        <div class="roi-label">měsíců<br>u většiny projektů</div>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
-                            <line x1="12" y1="22" x2="12" y2="15.5"/>
-                            <polyline points="22 8.5 12 15.5 2 8.5"/>
-                        </svg>
+                <p class="roi-note">
+                    Přesné čísla závisí na vašem procesu. Na první konzultaci
+                    společně odhadneme reálný dopad pro vaši firmu.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="reference">
+        <div class="container">
+            <div class="section-eyebrow">Reference</div>
+            <h2 class="section-title">Projekty na zakázku</h2>
+            <p class="section-desc" style="margin-bottom: 36px;">
+                Příklady větších projektů, které jsem realizoval pro externí klienty.
+            </p>
+            <div class="case-study-carousel">
+                <!-- Scaleupboard -->
+                <div class="case-study-card">
+                    <div class="case-meta">
+                        <span class="case-meta-badge">AI analýza</span>
+                        <span class="case-meta-badge">OCR</span>
+                        <span class="case-meta-badge">Automatizace</span>
                     </div>
-                    Django
+                    <h3>Scaleupboard</h3>
+                    <p>
+                        Firma Scaleupboard potřebovala zrychlit přípravu na konzultace s klienty.
+                        Koučové trávili hodiny analýzou účetních výkazů, než mohli vést samotnou konzultaci.
+                        Postavil jsem systém, který automaticky čte české účetní výkazy a připravuje
+                        přehled finanční situace firmy. Kouč dostane podklady předem —
+                        konzultaci pak vede člověk, ne stroj.
+                    </p>
+                    <div class="case-results">
+                        <div class="case-result">
+                            <div class="case-result-number">3 min</div>
+                            <div class="case-result-label">příprava analýzy místo hodin</div>
+                        </div>
+                        <div class="case-result">
+                            <div class="case-result-number">~30</div>
+                            <div class="case-result-label">aktivních uživatelů denně</div>
+                        </div>
+                        <div class="case-result">
+                            <div class="case-result-number">100%</div>
+                            <div class="case-result-label">konzultací vede živý kouč</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
+                <!-- Pavel Carda — prémiové kontejnery -->
+                <div class="case-study-card">
+                    <div class="case-meta">
+                        <span class="case-meta-badge">CRM na míru</span>
+                        <span class="case-meta-badge">Automatizace nabídek</span>
                     </div>
-                    FastAPI
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
-                        </svg>
+                    <h3>Pavel Carda — prémiové kontejnery</h3>
+                    <p>
+                        Firma Prémiové kontejnery potřebovala zrychlit a zpřesnit proces tvorby nabídek.
+                        Obchodník trávil čas ručním skládáním variant a přepisováním údajů mezi systémy.
+                        Vytvořil jsem CRM systém přizpůsobený potřebám firmy s konfigurátorem,
+                        který automaticky generuje nabídky podle vybraných parametrů.
+                        Obchodník klikne, systém vytvoří — méně chyb, rychlejší reakce na poptávky.
+                    </p>
+                    <div class="case-results">
+                        <div class="case-result">
+                            <div class="case-result-number">80%</div>
+                            <div class="case-result-label">úspora času při tvorbě nabídek</div>
+                        </div>
+                        <div class="case-result">
+                            <div class="case-result-number">0</div>
+                            <div class="case-result-label">chyb z ručního přepisování</div>
+                        </div>
+                        <div class="case-result">
+                            <div class="case-result-number">2×</div>
+                            <div class="case-result-label">rychlejší reakce na poptávky</div>
+                        </div>
                     </div>
-                    Claude API
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="4"/>
-                            <line x1="12" y1="2" x2="12" y2="4"/>
-                            <line x1="12" y1="20" x2="12" y2="22"/>
-                            <line x1="2" y1="12" x2="4" y2="12"/>
-                            <line x1="20" y1="12" x2="22" y2="12"/>
-                        </svg>
-                    </div>
-                    OpenAI
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-                        </svg>
-                    </div>
-                    LangChain
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    n8n
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                        </svg>
-                    </div>
-                    PostgreSQL
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                        </svg>
-                    </div>
-                    Supabase
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                            <line x1="12" y1="22.08" x2="12" y2="12"/>
-                        </svg>
-                    </div>
-                    pgvector
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                        </svg>
-                    </div>
-                    HTML/CSS
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2">
-                            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
-                            <path d="M12 8v8M8 12h8"/>
-                        </svg>
-                    </div>
-                    JavaScript
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                            <polyline points="2 17 12 22 22 17"/>
-                            <polyline points="2 12 12 17 22 12"/>
-                        </svg>
-                    </div>
-                    Node.js
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="4"/>
-                            <line x1="21.17" y1="8" x2="12" y2="8"/>
-                            <line x1="3.95" y1="6.06" x2="8.54" y2="14"/>
-                            <line x1="10.88" y1="21.94" x2="15.46" y2="14"/>
-                        </svg>
-                    </div>
-                    React
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    Alpine.js
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink)" stroke-width="2">
-                            <path d="M22 12H2M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                    </div>
-                    REST API
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <rect x="6" y="8" width="4" height="8"/>
-                            <rect x="14" y="8" width="4" height="8"/>
-                        </svg>
-                    </div>
-                    Docker
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
-                            <circle cx="12" cy="12" r="4"/>
-                            <line x1="1.05" y1="12" x2="7" y2="12"/>
-                            <line x1="17.01" y1="12" x2="22.96" y2="12"/>
-                        </svg>
-                    </div>
-                    Git
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process page-section" id="process">
+    <!-- ABOUT -->
+    <section id="o-mne">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Jak to funguje</span>
-                <h2 class="section-title">Proces spolupráce</h2>
-            </div>
-            <div class="process-grid">
-                <div class="process-step reveal reveal-delay-1">
-                    <div class="process-number">01</div>
-                    <h3>Discovery</h3>
-                    <p>30 min call zdarma. Pochopím váš problém a najdeme potenciál pro automatizaci.</p>
+            <div class="section-eyebrow">O mně</div>
+            <h2 class="section-title">Bronislav Klus</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        <strong>Nejsem člověk, který jen propojuje nástroje.</strong>
+                        Přemýšlím nad tím, jak ve firmě skutečně vzniká hodnota —
+                        a kde může technologie odstranit tření nebo zlepšit rozhodování.
+                    </p>
+                    <p>
+                        Specializuji se na Python, automatizaci a práci s AI modely.
+                        Navrhuji řešení tak, aby nebyla jen technicky funkční, ale aby
+                        je lidé ve firmě opravdu používali.
+                    </p>
+                    <p>
+                        Rozumím tomu, že technologie sama o sobě nic nezmění. Důležité je,
+                        jak zapadne do procesu, týmu a každodenní reality firmy.
+                    </p>
+                    <p>
+                        Ke každému projektu přistupuji konzultačně — nejdřív pochopím
+                        kontext a cíle, až potom navrhuji konkrétní řešení.
+                    </p>
                 </div>
-                <div class="process-step reveal reveal-delay-2">
-                    <div class="process-number">02</div>
-                    <h3>Návrh řešení</h3>
-                    <p>Do týdne dostanete konkrétní návrh — co, jak a kolik to bude stát.</p>
-                </div>
-                <div class="process-step reveal reveal-delay-3">
-                    <div class="process-number">03</div>
-                    <h3>Implementace</h3>
-                    <p>Pracuji iterativně. Vidíte pokrok každý týden a můžete průběžně reagovat.</p>
-                </div>
-                <div class="process-step reveal reveal-delay-4">
-                    <div class="process-number">04</div>
-                    <h3>Předání & podpora</h3>
-                    <p>Funkční řešení včetně dokumentace. Volitelně dlouhodobá údržba.</p>
+                <div class="tech-stack">
+                    <h4>Pracuji s</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Supabase</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq page-section" id="faq">
+    <!-- CTA -->
+    <section class="cta-section" id="kontakt">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Časté otázky</span>
-                <h2 class="section-title">FAQ</h2>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item reveal reveal-delay-1">
-                    <h3>Kolik stojí spolupráce?</h3>
-                    <p>Záleží na rozsahu projektu. Na prvním callu odhadnu náročnost a dám vám konkrétní čísla.</p>
-                </div>
-                <div class="faq-item reveal reveal-delay-2">
-                    <h3>Jak dlouho trvá realizace?</h3>
-                    <p>Jednodušší projekty 1-2 týdny, složitější 4-8 týdnů. Vždy s průběžnými updaty.</p>
-                </div>
-                <div class="faq-item reveal reveal-delay-3">
-                    <h3>Co když nevím přesně, co potřebuji?</h3>
-                    <p>Žádný problém. Na discovery callu společně najdeme potenciál pro automatizaci ve vašem businessu.</p>
-                </div>
-                <div class="faq-item reveal reveal-delay-4">
-                    <h3>Nabízíš i údržbu po dokončení?</h3>
-                    <p>Ano, nabízím pravidelnou i ad-hoc údržbu. Řešení nezůstane bez podpory.</p>
-                </div>
-                <div class="faq-item reveal reveal-delay-5">
-                    <h3>Používáš šablonová řešení?</h3>
-                    <p>Ne. Každé řešení stavím na míru vašim konkrétním potřebám a procesům.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="section-eyebrow">Další krok</div>
+            <h2 class="section-title">Probrat, co dává smysl u&nbsp;vás</h2>
+            <p class="section-desc">
+                30 minut, nezávazně, zdarma. Řeknete mi, co řešíte —
+                já řeknu, jestli a jak vám dokážu pomoct.
+            </p>
 
-    <!-- Contact Section -->
-    <section class="contact page-section" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info reveal">
-                    <h2>Pojďme společně<br>vytvořit něco <span class="gradient-text">výjimečného</span></h2>
-                    <p>Máte projekt na automatizaci nebo AI? Rád si poslechnu vaše nápady a navrhnu řešení na míru.</p>
+            <div class="cta-grid">
+                <!-- CALENDLY -->
+                <div class="cta-option">
+                    <div class="cta-option-icon">📅</div>
+                    <h3>Vyberte si termín</h3>
+                    <p>Zarezervujte si 30min hovor přímo v&nbsp;kalendáři.</p>
 
-                    <div class="contact-links">
-                        <a href="mailto:brona.klus@gmail.com" class="contact-link">
-                            <div class="contact-link-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">Email</span>
-                                <span class="contact-link-value">brona.klus@gmail.com</span>
-                            </div>
-                        </a>
-
-                        <a href="tel:+420777512923" class="contact-link">
-                            <div class="contact-link-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">Telefon</span>
-                                <span class="contact-link-value">+420 777 512 923</span>
-                            </div>
-                        </a>
-
-                        <a href="https://wa.me/420777512923" target="_blank" rel="noopener" class="contact-link">
-                            <div class="contact-link-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">WhatsApp</span>
-                                <span class="contact-link-value">Napsat zprávu</span>
-                            </div>
-                        </a>
-
-                        <a href="#" onclick="openCalendly();return false;" class="contact-link">
-                            <div class="contact-link-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                                    <line x1="16" y1="2" x2="16" y2="6"/>
-                                    <line x1="8" y1="2" x2="8" y2="6"/>
-                                    <line x1="3" y1="10" x2="21" y2="10"/>
-                                </svg>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">Calendly</span>
-                                <span class="contact-link-value">Naplánovat schůzku</span>
-                            </div>
-                        </a>
+                    <div class="calendly-inline-widget"
+                         data-url="https://calendly.com/brona-klus?hide_gdpr_banner=1&background_color=141418&text_color=E8E6E3&primary_color=D4F97C"
+                         style="min-width:280px;height:380px;">
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper reveal reveal-delay-2">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpqjdeav" method="POST">
-                        <h3>Nezávazná konzultace</h3>
-                        <div class="form-group">
-                            <label for="name">Jméno</label>
-                            <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Zpráva</label>
-                            <textarea id="message" name="message" placeholder="Popište váš projekt nebo nápad..." required></textarea>
-                        </div>
-                        <!-- Honeypot anti-spam -->
-                        <input type="text" name="_gotcha" style="display:none">
-                        <input type="hidden" name="_subject" value="Nová zpráva z webu - Konzultace">
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <span>Odeslat zprávu</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"/>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                            </svg>
+                <!-- DIVIDER -->
+                <div class="cta-divider">
+                    <div class="cta-divider-line"></div>
+                    <span>nebo</span>
+                    <div class="cta-divider-line"></div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="cta-option">
+                    <div class="cta-option-icon">✉️</div>
+                    <h3>Napište mi</h3>
+                    <p>Popište v pár větách, co řešíte. Ozvu se do 24 hodin.</p>
+                    <form id="contactForm" action="https://formspree.io/f/mpqjdeav" method="POST">
+                        <input type="text" name="name" placeholder="Jméno" required class="form-input" />
+                        <input type="email" name="email" placeholder="E-mail" required class="form-input" />
+                        <input type="text" name="company" placeholder="Firma (nepovinné)" class="form-input" />
+                        <textarea name="message" placeholder="Co řešíte? (stačí pár vět)" rows="4" required class="form-input form-textarea"></textarea>
+                        <input type="hidden" name="_subject" value="Nová zpráva z webu">
+                        <button type="submit" class="btn-primary form-submit">
+                            Odeslat zprávu →
                         </button>
-                        <p class="form-status" id="formStatus"></p>
+                        <p class="form-note">Žádný spam. Žádný newsletter. Jen odpověď na váš dotaz.</p>
+                        <div id="formStatus" class="form-status"></div>
                     </form>
                 </div>
             </div>
-
-            <!-- Footer info inside contact section -->
-            <div class="footer-inline">
-                <p class="footer-text">© 2025 <span>Bronislav Klus</span>. Všechna práva vyhrazena.</p>
-                <p class="footer-ico">IČO: 75554461</p>
-            </div>
         </div>
     </section>
 
-    </div><!-- End Page Container -->
-
-    <!-- Section Navigation Dots -->
-    <nav class="section-nav" id="sectionNav">
-        <button class="section-nav-dot active" data-section="hero" data-label="Úvod" aria-label="Úvod"></button>
-        <button class="section-nav-dot" data-section="about" data-label="O mně" aria-label="O mně"></button>
-        <button class="section-nav-dot" data-section="services" data-label="Služby" aria-label="Služby"></button>
-        <button class="section-nav-dot" data-section="tech" data-label="Technologie" aria-label="Technologie"></button>
-        <button class="section-nav-dot" data-section="process" data-label="Proces" aria-label="Proces"></button>
-        <button class="section-nav-dot" data-section="faq" data-label="FAQ" aria-label="FAQ"></button>
-        <button class="section-nav-dot" data-section="contact" data-label="Kontakt" aria-label="Kontakt"></button>
-    </nav>
-
-    <!-- Calendly Modal -->
-    <div class="calendly-modal-overlay" id="calendlyModal">
-        <div class="calendly-modal">
-            <div class="calendly-modal-header">
-                <span class="calendly-modal-title">Naplánujte si konzultaci</span>
-                <button class="calendly-modal-close" id="calendlyClose" aria-label="Zavřít">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
-                </button>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    © 2026 <a href="#">Bronislav Klus</a> · IČO: 75554461 · Ostrava, CZ
+                </div>
+                <div class="footer-right">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="mailto:brona.klus@gmail.com">Email</a>
+                </div>
             </div>
-            <div class="calendly-modal-body">
-                <iframe
-                    id="calendlyFrame"
-                    src=""
-                    loading="lazy"
-                    title="Calendly"
-                ></iframe>
-            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT WIDGET -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Otevřít chat">
+            <span class="chat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </span>
+            <span class="close-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </span>
+        </button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">Jak vám mohu pomoci?</div>
+            <div class="chatbot-body" id="chatbotBody"></div>
         </div>
     </div>
 
-    
+    <!-- Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Page container and sections
-        const pageContainer = document.getElementById('pageContainer');
-        const sections = document.querySelectorAll('.page-section');
-        const sectionNavDots = document.querySelectorAll('.section-nav-dot');
-        const nav = document.querySelector('nav');
-
-        // Navbar scroll effect
-        pageContainer.addEventListener('scroll', () => {
-            if (pageContainer.scrollTop > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Update active section dot
-        const updateActiveDot = () => {
-            const scrollPosition = pageContainer.scrollTop;
-            const windowHeight = window.innerHeight;
-
-            sections.forEach((section, index) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-
-                if (scrollPosition >= sectionTop - windowHeight / 3 &&
-                    scrollPosition < sectionTop + sectionHeight - windowHeight / 3) {
-                    sectionNavDots.forEach(dot => dot.classList.remove('active'));
-                    sectionNavDots[index].classList.add('active');
-                }
-            });
-        };
-
-        pageContainer.addEventListener('scroll', updateActiveDot);
-
-        // Click on dots to navigate
-        sectionNavDots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const targetId = dot.getAttribute('data-section');
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // Reveal on scroll
-        const reveals = document.querySelectorAll('.reveal');
-
-        const revealOnScroll = () => {
-            reveals.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('active');
-                }
-            });
-        };
-
-        pageContainer.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Initial check
-
-        // Form submission with Formspree
+        // ═══════════════════════════════════════════
+        // CONTACT FORM WITH FORMSPREE
+        // ═══════════════════════════════════════════
         const contactForm = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
 
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Disable button and show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Odesílám...';
             submitBtn.disabled = true;
-            submitBtn.querySelector('span').textContent = 'Odesílám...';
-            formStatus.textContent = '';
-            formStatus.className = 'form-status';
-
-            const formData = new FormData(contactForm);
 
             try {
                 const response = await fetch(contactForm.action, {
                     method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
                 });
 
                 if (response.ok) {
-                    formStatus.textContent = '✓ Děkuji! Zpráva byla odeslána. Ozvu se vám co nejdříve.';
+                    formStatus.textContent = 'Díky! Ozvu se vám do 24 hodin.';
                     formStatus.className = 'form-status success';
                     contactForm.reset();
                 } else {
-                    throw new Error('Něco se pokazilo');
+                    throw new Error('Chyba při odesílání');
                 }
             } catch (error) {
-                formStatus.textContent = '✗ Omlouvám se, něco se pokazilo. Zkuste to znovu nebo mi napište přímo na email.';
+                formStatus.textContent = 'Něco se pokazilo. Zkuste to znovu nebo mi napište přímo na email.';
                 formStatus.className = 'form-status error';
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.querySelector('span').textContent = 'Odeslat zprávu';
             }
-        });
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
 
-        // Parallax effect for blobs
-        window.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX / window.innerWidth;
-            const mouseY = e.clientY / window.innerHeight;
-
-            document.querySelectorAll('.blob').forEach((blob, index) => {
-                const speed = (index + 1) * 20;
-                const x = (mouseX - 0.5) * speed;
-                const y = (mouseY - 0.5) * speed;
-                blob.style.transform = `translate(${x}px, ${y}px)`;
-            });
-        });
-
-        // Calendly Modal
-        const calendlyModal = document.getElementById('calendlyModal');
-        const calendlyFrame = document.getElementById('calendlyFrame');
-        const calendlyClose = document.getElementById('calendlyClose');
-        const calendlyUrl = 'https://calendly.com/brona-klus?hide_gdpr_banner=1&background_color=0a0a0f&text_color=f0f0f5&primary_color=00d4ff';
-
-        function openCalendly() {
-            calendlyFrame.src = calendlyUrl;
-            calendlyModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeCalendly() {
-            calendlyModal.classList.remove('active');
-            document.body.style.overflow = '';
-            // Clear iframe after animation
             setTimeout(() => {
-                calendlyFrame.src = '';
-            }, 400);
+                formStatus.className = 'form-status';
+            }, 5000);
+        });
+
+        // ═══════════════════════════════════════════
+        // CHATBOT LOGIC
+        // ═══════════════════════════════════════════
+        const chatbotToggle = document.getElementById('chatbotToggle');
+        const chatbotWindow = document.getElementById('chatbotWindow');
+        const chatbotBody = document.getElementById('chatbotBody');
+
+        // Chatbot conversation tree - profesionální B2B verze
+        const chatbotTree = {
+            // ═══════════════════════════════════════════
+            // HLAVNÍ MENU
+            // ═══════════════════════════════════════════
+            root: {
+                message: "Dobrý den, jsem Bronislav.\n\nPomáhám firmám odstranit ruční práci a stavět systémy, které fungují samy.\n\nCo vás zajímá?",
+                options: [
+                    { text: "Jaké problémy řešíte?", next: "problems" },
+                    { text: "Co přesně děláte?", next: "services" },
+                    { text: "Kolik to stojí?", next: "pricing" },
+                    { text: "Jak spolupráce funguje?", next: "process" },
+                    { text: "Nezávazná konzultace", next: "booking", cta: true },
+                    { text: "Jiný dotaz", next: "custom" }
+                ]
+            },
+
+            // ═══════════════════════════════════════════
+            // JAKÉ PROBLÉMY ŘEŠÍTE?
+            // ═══════════════════════════════════════════
+            problems: {
+                message: "Nejčastěji pomáhám firmám, které rostou a narážejí na limity svých procesů.\n\nVyberte, co vás nejvíc trápí:",
+                options: [
+                    { text: "Systémy spolu nemluví", next: "prob_systems" },
+                    { text: "Procesy nestíhají růst", next: "prob_scaling" },
+                    { text: "Chybí přehled", next: "prob_visibility" },
+                    { text: "Kvalita vs. objem", next: "prob_quality" },
+                    { text: "Delegování nefunguje", next: "prob_delegation" },
+                    { text: "Lidé dělají práci pro stroj", next: "prob_manual" }
+                ],
+                back: "root"
+            },
+
+            // Problém 1: Systémy spolu nemluví
+            prob_systems: {
+                message: "Systémy, které spolu nemluví\n\nTohle vidím často: fakturace v jednom nástroji, CRM v druhém, sklad nebo projektový systém ve třetím. Mezi nimi člověk, který data ručně přepisuje.\n\nVýsledek? Zdvojená práce, chyby z přepisování, neaktuální data. Když někdo onemocní, nikdo neví, kde co je.\n\nŘešení: Propojím vaše systémy tak, aby si data předávaly automaticky. Žádné přepisování, žádné ztráty. Člověk jen kontroluje, že vše běží.",
+                options: [
+                    { text: "Jak to řešíte technicky?", next: "automation" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // Problém 2: Procesy nestíhají růst
+            prob_scaling: {
+                message: "Co stačilo, už nestačí\n\nKdyž bylo ve firmě 10 lidí, všechno fungovalo. Excel stačil, e-mail stačil, člověk v hlavě držel kontext. Při 30 nebo 50 lidech to padá.\n\nRuční práce roste rychleji než tým. Přijímáte lidi na práci, kterou by měl dělat systém. A pořád nestíháte.\n\nŘešení: Identifikuji procesy, které brzdí růst, a navrhnu automatizaci nebo AI systém, který škáluje bez dalších lidí. Začínáme vždy tam, kde je největší páka.",
+                options: [
+                    { text: "Jak vypadá spolupráce?", next: "process" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // Problém 3: Chybí přehled
+            prob_visibility: {
+                message: "Přehled mizí s růstem\n\nDřív jste věděli všechno. Kdo co dělá, jak na tom jsou zakázky, co říkají zákazníci. Teď máte 30 lidí a rozhodujete naslepo.\n\nData existují, ale jsou rozházená v desítkách míst. Než někdo připraví report, je pozdě. A většinou ani nevíte, na co se ptát.\n\nŘešení: Postavím systém, který sbírá data z vašich nástrojů a připravuje přehledy automaticky. Denní report, týdenní souhrn, nebo dashboard v reálném čase. Rozhodujete na datech, ne na pocitech.",
+                options: [
+                    { text: "Reporting a dashboardy", next: "ai_scoring" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // Problém 4: Kvalita vs. objem
+            prob_quality: {
+                message: "Kvalita vs. objem\n\nZvládáte víc zakázek než dřív, ale cítíte, že kvalita klesá. Chybovost roste, ruční kontrola nestíhá. Občas si toho všimne i klient.\n\nProblém není v lidech — je v tom, že kontrolní mechanismy nefungují při větším objemu. Člověk prostě nezvládne zkontrolovat 200 položek denně bez chyby.\n\nŘešení: Automatizuji kontrolní kroky nebo nasadím AI, která prochází data a upozorňuje na anomálie. Člověk řeší jen výjimky, ne rutinu.",
+                options: [
+                    { text: "AI pro kontrolu kvality", next: "ai_documents" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // Problém 5: Delegování nefunguje
+            prob_delegation: {
+                message: "Delegování bez systému\n\nChcete předat odpovědnost, ale není kam. Know-how je v hlavách pár lidí. Procesy nejsou zdokumentované, nebo dokumentace neodpovídá realitě.\n\nKdyž něco předáte, vrátí se vám to s chybami. Radši to uděláte sami. Ale tím se stáváte úzkým hrdlem.\n\nŘešení: Pomůžu zavést systémy, které drží procesy pohromadě i bez vás. AI asistent nad interními materiály, automatické checklisty, workflow s jasnými kroky. Delegujete s jistotou, že to dopadne.",
+                options: [
+                    { text: "Interní AI asistent", next: "ai_assistant" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // Problém 6: Lidé dělají práci pro stroj
+            prob_manual: {
+                message: "Kvalifikovaní lidé na nekvalifikované práci\n\nVáš nejlepší člověk tráví hodiny přepisováním dat, vyplňováním tabulek nebo kopírováním mezi systémy. Dělá práci, která nevyžaduje jeho expertízu.\n\nJe to frustrující pro něj i pro vás. Platíte za odbornost, kterou nevyužíváte. A on přemýšlí, jestli by nebyl užitečnější jinde.\n\nŘešení: Odstraním rutinní práci automatizací. Váš člověk se vrátí k tomu, co umí — a vy z něj dostanete hodnotu, za kterou platíte.",
+                options: [
+                    { text: "Automatizace procesů", next: "automation" },
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další problémy", next: "problems" }
+                ],
+                back: "problems"
+            },
+
+            // ═══════════════════════════════════════════
+            // CO PŘESNĚ DĚLÁTE? - HLAVNÍ ROZCESTNÍK
+            // ═══════════════════════════════════════════
+            services: {
+                message: "Zaměřuji se na tři oblasti:\n\n• Automatizace procesů — propojení systémů, odstranění ruční práce\n• AI systémy na míru — analýza dokumentů, interní asistenti, predikce\n• Datová architektura — návrh systémů, které vydrží a škálují",
+                options: [
+                    { text: "Automatizace procesů", next: "automation" },
+                    { text: "AI systémy na míru", next: "ai_systems" },
+                    { text: "Datová architektura", next: "architecture" }
+                ],
+                back: "root"
+            },
+
+            // ═══════════════════════════════════════════
+            // AUTOMATIZACE PROCESŮ
+            // ═══════════════════════════════════════════
+            automation: {
+                message: "Automatizace procesů\n\nPropojuji systémy a odstraňuji ruční práci. Faktury, objednávky, CRM, e-maily — cokoliv, co se dá popsat jako \"když se stane X, udělej Y\".\n\nNejde o náhradu lidí, ale o to, aby dělali práci, která má smysl.",
+                options: [
+                    { text: "E-shop / objednávky", next: "auto_eshop" },
+                    { text: "Účetnictví / fakturace", next: "auto_accounting" },
+                    { text: "CRM / obchod", next: "auto_sales" }
+                ],
+                back: "services"
+            },
+            auto_eshop: {
+                message: "E-shop / objednávky\n\nTypický scénář: Objednávka přijde e-mailem nebo z webu. Někdo ji ručně přepíše do fakturačního systému, pak do skladu, pak odešle potvrzení.\n\nPo automatizaci: Objednávka přijde → systém ji automaticky zpracuje → vytvoří fakturu → aktualizuje sklad → odešle potvrzení zákazníkovi. Člověk zasahuje jen u výjimek.\n\nÚspora: Desítky hodin měsíčně, nulová chybovost v rutině.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další příklady", next: "automation" }
+                ],
+                back: "automation"
+            },
+            auto_accounting: {
+                message: "Účetnictví / fakturace\n\nTypický scénář: Faktura dorazí e-mailem. Někdo ji otevře, přečte údaje, ručně je zadá do účetního systému. Při 50 fakturách denně je to celý úvazek.\n\nPo automatizaci: Faktura přijde → AI vytěží data (dodavatel, částka, splatnost, položky) → připraví k zaúčtování → člověk jen schválí nebo opraví výjimky.\n\nÚspora: Tým zvládne 3× víc bez navyšování kapacity.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další příklady", next: "automation" }
+                ],
+                back: "automation"
+            },
+            auto_sales: {
+                message: "CRM / obchod\n\nTypický scénář: Lead vyplní formulář na webu. Někdo si toho všimne za hodinu (nebo za den), ručně ho založí do CRM, pak mu napíše.\n\nPo automatizaci: Lead vyplní formulář → automaticky se založí v CRM s kontextem → obchodník dostane notifikaci → systém odešle úvodní e-mail → naplánuje follow-up.\n\nÚspora: Žádné ztracené příležitosti, rychlejší reakce, konzistentní proces.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další příklady", next: "automation" }
+                ],
+                back: "automation"
+            },
+
+            // ═══════════════════════════════════════════
+            // AI SYSTÉMY NA MÍRU
+            // ═══════════════════════════════════════════
+            ai_systems: {
+                message: "AI systémy na míru\n\nPomáhám firmám pracovat s jejich vlastními daty způsobem, který dříve nebyl možný. Analýza dokumentů, interní asistenti, predikce a scoring.\n\nKlíčové: Člověk zůstává v kontrole. AI připravuje podklady, člověk rozhoduje.",
+                options: [
+                    { text: "Analýza dokumentů", next: "ai_documents" },
+                    { text: "Interní AI asistent", next: "ai_assistant" },
+                    { text: "Scoring a predikce", next: "ai_scoring" }
+                ],
+                back: "services"
+            },
+            ai_documents: {
+                message: "Analýza dokumentů\n\nMáte stovky smluv, reportů nebo účetních výkazů a potřebujete z nich vytáhnout konkrétní informace? Ručně by to trvalo týdny.\n\nAI systém přečte dokumenty, vytáhne klíčové údaje podle vašich kritérií a připraví strukturovaný přehled. Funguje to pro smlouvy, faktury, technické specifikace, výroční zprávy.\n\nPříklad: Klient potřeboval analyzovat 200 smluv a najít rizikové klauzule. Místo 2 týdnů práce právníka to trvalo 3 hodiny.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další AI řešení", next: "ai_systems" }
+                ],
+                back: "ai_systems"
+            },
+            ai_assistant: {
+                message: "Interní AI asistent\n\nKnow-how vaší firmy existuje v hlavách lidí, v dokumentech, v e-mailech. Když někdo potřebuje odpověď, hledá hodinu nebo se ptá kolegy, který má práci.\n\nInterní AI asistent zná vaše materiály, procesy a postupy. Odpovídá okamžitě, konzistentně, 24/7. Nový člověk se zeptá asistenta místo toho, aby rušil seniory.\n\nVýsledek: Rychlejší onboarding, menší závislost na klíčových lidech, konzistentní odpovědi.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další AI řešení", next: "ai_systems" }
+                ],
+                back: "ai_systems"
+            },
+            ai_scoring: {
+                message: "Scoring a predikce\n\nMáte data o zákaznících, ale nevíte, kteří jsou nejperspektivnější? Obchodníci tráví čas na kontaktech, které nikam nevedou?\n\nAI analyzuje historická data a přiřazuje skóre podle pravděpodobnosti nákupu, odchodu nebo jiného cíle. Obchodníci se soustředí na správné kontakty, marketing cílí přesněji.\n\nPříklad: E-shop snížil náklady na akvizici o 30 %, protože přestal oslovovat lidi, kteří stejně nekoupí.",
+                options: [
+                    { text: "Chci to probrat", next: "booking", cta: true },
+                    { text: "Další AI řešení", next: "ai_systems" }
+                ],
+                back: "ai_systems"
+            },
+
+            // ═══════════════════════════════════════════
+            // DATOVÁ ARCHITEKTURA
+            // ═══════════════════════════════════════════
+            architecture: {
+                message: "Datová architektura\n\nPro firmy, které už mají automatizaci nebo AI, ale cítí, že to není systémové. Nástroje fungují, ale nedrží pohromadě. Změna jednoho rozbije druhé.\n\nPomůžu navrhnout strukturu, která vydrží a půjde škálovat:\n\n• Audit současného stavu — co funguje, co ne, kde jsou rizika\n• Návrh cílové architektury — jak by to mělo vypadat\n• Roadmapa implementace — jak se tam dostat krok za krokem",
+                options: [
+                    { text: "Chci konzultaci", next: "booking", cta: true },
+                    { text: "Zpět na služby", next: "services" }
+                ],
+                back: "services"
+            },
+
+            // ═══════════════════════════════════════════
+            // KOLIK TO STOJÍ?
+            // ═══════════════════════════════════════════
+            pricing: {
+                message: "Férová otázka. Cena vždy záleží na rozsahu a cíli projektu.\n\nPro orientaci:\n\nJednodušší automatizace\nZačínají přibližně od 6 000 Kč.\n\nVětší workflow nebo kombinace více systémů\nObvykle od 20 000 Kč.\n\nAI systémy a komplexní řešení\nŘeší se individuálně podle cíle a dostupných dat.\n\nPřesnou nabídku dostanete po krátké konzultaci.\nBez překvapení, bez skrytých nákladů.",
+                options: [
+                    { text: "Domluvit konzultaci", next: "booking", cta: true },
+                    { text: "Co přesně děláte?", next: "services" }
+                ],
+                back: "root"
+            },
+
+            // ═══════════════════════════════════════════
+            // JAK SPOLUPRÁCE FUNGUJE?
+            // ═══════════════════════════════════════════
+            process: {
+                message: "Jak spolupráce funguje:\n\n1. Úvodní call (30 min, zdarma)\nProbereme váš proces a cíle.\n\n2. Konkrétní návrh (do 3 dnů)\nCo se bude dělat, jak dlouho to potrvá a jaký je rozpočet.\n\n3. Realizace mimo váš provoz\nNejdřív testovací režim, nic vám nerozbiju.\n\n4. Předání + měsíc podpory\nVaši lidé vědí, jak s řešením pracovat.",
+                options: [
+                    { text: "Domluvit úvodní call", next: "booking", cta: true },
+                    { text: "Kolik to stojí?", next: "pricing" }
+                ],
+                back: "root"
+            },
+
+            // ═══════════════════════════════════════════
+            // PRO KOHO TO NENÍ?
+            // ═══════════════════════════════════════════
+            not_for: {
+                message: "Spolupráce nemusí dávat smysl, pokud:\n\n– hledáte nejlevnější variantu bez ohledu na kvalitu\n– chcete implementovat AI bez jasného cíle\n– nemáte čas věnovat 30 minut úvodnímu rozhovoru\n\nNejlépe fungujeme tam, kde je konkrétní proces k vyřešení a ochota věci měnit.",
+                options: [
+                    { text: "To sedí, chci konzultaci", next: "booking", cta: true },
+                    { text: "Co přesně děláte?", next: "services" }
+                ],
+                back: "root"
+            },
+
+            // ═══════════════════════════════════════════
+            // BOOKING (CTA)
+            // ═══════════════════════════════════════════
+            booking: {
+                message: "30 minut, nezávazně, bez prodejního tlaku.\n\nProbereme, co řešíte, a řeknu vám, jestli a jak dokážu pomoct.\n\nVyberte si termín v kalendáři:",
+                options: [
+                    { text: "Otevřít kalendář", action: "openCalendly", cta: true },
+                    { text: "Zpět na začátek", next: "root" }
+                ],
+                back: "root"
+            },
+
+            // ═══════════════════════════════════════════
+            // VLASTNÍ DOTAZ
+            // ═══════════════════════════════════════════
+            custom: {
+                message: "Napište mi váš dotaz a ozvu se e-mailem.\n\nObvykle do několika hodin, nejpozději do 24h.",
+                showForm: true,
+                back: "root"
+            },
+            formSent: {
+                message: "Děkuji. Dostal jsem váš dotaz a ozvu se co nejdříve.",
+                options: [
+                    { text: "Zpět na začátek", next: "root" }
+                ]
+            }
+        };
+
+        let currentNode = "root";
+        let history = [];
+
+        // Toggle chatbot window
+        chatbotToggle.addEventListener('click', () => {
+            chatbotToggle.classList.toggle('active');
+            chatbotWindow.classList.toggle('active');
+            if (chatbotWindow.classList.contains('active') && chatbotBody.innerHTML === '') {
+                renderNode("root");
+            }
+        });
+
+        // Render a node
+        function renderNode(nodeId, isUserChoice = false, userText = null) {
+            const node = chatbotTree[nodeId];
+            if (!node) return;
+
+            // Add user message if this was a choice
+            if (isUserChoice && userText) {
+                const userMsg = document.createElement('div');
+                userMsg.className = 'chatbot-message user';
+                userMsg.textContent = userText;
+                chatbotBody.appendChild(userMsg);
+            }
+
+            // Track history for back button
+            if (nodeId !== currentNode && nodeId !== "root") {
+                history.push(currentNode);
+            }
+            if (nodeId === "root") {
+                history = [];
+            }
+            currentNode = nodeId;
+
+            // Bot message
+            const botMsg = document.createElement('div');
+            botMsg.className = 'chatbot-message bot';
+            botMsg.textContent = node.message;
+            chatbotBody.appendChild(botMsg);
+
+            // Options
+            if (node.options && node.options.length > 0) {
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'chatbot-options';
+
+                node.options.forEach(opt => {
+                    const btn = document.createElement('button');
+                    btn.className = 'chatbot-option' + (opt.cta ? ' cta' : '');
+                    btn.textContent = opt.text;
+
+                    btn.addEventListener('click', () => {
+                        if (opt.action === 'openCalendly') {
+                            document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+                            chatbotToggle.click(); // Close chatbot
+                        } else if (opt.next) {
+                            renderNode(opt.next, true, opt.text);
+                        }
+                    });
+
+                    optionsDiv.appendChild(btn);
+                });
+
+                chatbotBody.appendChild(optionsDiv);
+            }
+
+            // Custom question form
+            if (node.showForm) {
+                const formDiv = document.createElement('div');
+                formDiv.className = 'chatbot-form';
+                formDiv.innerHTML = `
+                    <input type="email" id="chatEmail" placeholder="Váš e-mail" required />
+                    <textarea id="chatMessage" placeholder="Váš dotaz..." required></textarea>
+                    <button type="button" id="chatSubmit">Odeslat dotaz</button>
+                `;
+                chatbotBody.appendChild(formDiv);
+
+                document.getElementById('chatSubmit').addEventListener('click', submitChatQuestion);
+            }
+
+            // Back button
+            if (node.back || history.length > 0) {
+                const backBtn = document.createElement('button');
+                backBtn.className = 'chatbot-back';
+                backBtn.innerHTML = '← Zpět';
+                backBtn.addEventListener('click', () => {
+                    const prevNode = history.pop() || "root";
+                    chatbotBody.innerHTML = '';
+                    currentNode = prevNode;
+                    renderNode(prevNode);
+                });
+                chatbotBody.appendChild(backBtn);
+            }
+
+            // Scroll to bottom
+            chatbotBody.scrollTop = chatbotBody.scrollHeight;
         }
 
-        calendlyClose.addEventListener('click', closeCalendly);
+        // Submit custom question via Formspree
+        async function submitChatQuestion() {
+            const email = document.getElementById('chatEmail').value.trim();
+            const message = document.getElementById('chatMessage').value.trim();
+            const submitBtn = document.getElementById('chatSubmit');
 
-        calendlyModal.addEventListener('click', (e) => {
-            if (e.target === calendlyModal) {
-                closeCalendly();
+            if (!email || !message) {
+                alert('Vyplňte prosím e-mail a dotaz.');
+                return;
             }
-        });
 
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && calendlyModal.classList.contains('active')) {
-                closeCalendly();
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Odesílám...';
+
+            try {
+                const response = await fetch('https://formspree.io/f/mpqjdeav', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        message: message,
+                        _subject: 'Dotaz z chatbotu'
+                    })
+                });
+
+                if (response.ok) {
+                    chatbotBody.innerHTML = '';
+                    renderNode('formSent');
+                } else {
+                    throw new Error('Chyba');
+                }
+            } catch (error) {
+                alert('Něco se pokazilo. Zkuste to znovu.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Odeslat dotaz';
             }
-        });
+        }
     </script>
+
 </body>
 </html>
