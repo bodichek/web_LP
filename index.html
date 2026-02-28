@@ -1202,6 +1202,8 @@
             padding: 36px 28px;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         @media (min-width: 768px) {
@@ -1261,6 +1263,8 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
+            align-items: stretch;
+            margin-top: auto;
         }
 
         @media (min-width: 768px) {
@@ -1275,6 +1279,9 @@
             background: rgba(212, 249, 124, 0.03);
             border: 1px solid var(--border-accent);
             border-radius: var(--radius-sm);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         @media (min-width: 768px) {
@@ -2503,7 +2510,7 @@
             },
 
             faq_cena: {
-                message: "Kolik to stojí?\n\nZáleží na rozsahu a složitosti.\n\nMenší automatizace: desítky tisíc Kč\nKomplexní systémy: stovky tisíc Kč\n\nPrvní konzultace je zdarma. Po ní dostanete konkrétní nabídku s cenou.\n\nŽádné skryté poplatky. Cena = cena.",
+                message: "Kolik to stojí?\n\nZáleží na rozsahu — každý projekt je jiný.\n\nNa prvním hovoru probereme, co potřebujete vyřešit. Do tří dnů dostanete návrh řešení i investice.\n\nBez závazku.",
                 options: [
                     { text: "Domluvit konzultaci", next: "booking", cta: true },
                     { text: "Další otázky", next: "faq_vysledky" }
