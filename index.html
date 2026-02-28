@@ -68,6 +68,7 @@
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 80px;
+            overflow-x: hidden;
         }
 
         @media (prefers-reduced-motion: no-preference) {
@@ -189,6 +190,7 @@
         .hero {
             padding: 140px 0 80px;
             position: relative;
+            overflow: hidden;
         }
 
         @media (min-width: 768px) {
@@ -549,6 +551,66 @@
             font-size: 0.92rem;
             color: var(--text-muted);
             line-height: 1.65;
+        }
+
+        /* From Practice / Case Studies */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 900px) {
+            .practice-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .practice-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .practice-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 32px;
+            right: 32px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 0 0 4px 4px;
+            opacity: 0.6;
+        }
+
+        .practice-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-3px);
+            background: var(--bg-card-hover);
+        }
+
+        .practice-card:hover::before {
+            opacity: 1;
+        }
+
+        .practice-quote {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.45;
+            margin-bottom: 18px;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        .practice-detail {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
         }
 
         /* Industry examples */
@@ -1555,10 +1617,10 @@
         .chatbot-toggle.active .close-icon { display: block; }
 
         .chatbot-window {
-            position: absolute;
-            bottom: 80px;
-            right: -8px;
-            width: calc(100vw - 32px);
+            position: fixed;
+            bottom: 90px;
+            left: 16px;
+            right: 16px;
             max-height: 70vh;
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -1574,7 +1636,10 @@
 
         @media (min-width: 480px) {
             .chatbot-window {
+                position: absolute;
+                left: auto;
                 right: 0;
+                bottom: 80px;
                 width: 380px;
                 max-height: 520px;
             }
@@ -1866,6 +1931,40 @@
         </div>
     </section>
 
+    <!-- FROM PRACTICE -->
+    <section class="from-practice" id="z-praxe">
+        <div class="container">
+            <div class="section-eyebrow">Z praxe</div>
+            <h2 class="section-title">Takhle to vypadá u klientů</h2>
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-quote">
+                        „Asistentka trávila 2 hodiny denně přepisováním objednávek. Teď to trvá nula."
+                    </div>
+                    <p class="practice-detail">
+                        Objednávka přijde, systém ji přečte, vytáhne data, zadá do systému, pošle potvrzení. Člověk jen schválí. Žádné kopírování, žádné chyby, žádné zdržení.
+                    </p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-quote">
+                        „Obchodník dělal nabídky 3 hodiny. Teď klikne a má ji."
+                    </div>
+                    <p class="practice-detail">
+                        Systém stáhne data o klientovi, doplní ceny, vygeneruje nabídku. Obchodník se vrátí k tomu, co umí — prodávat.
+                    </p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-quote">
+                        „Jednatel čekal na report týden. Teď ho má ráno na stole."
+                    </div>
+                    <p class="practice-detail">
+                        Data ze systémů se sbírají průběžně, automaticky. Vedení vidí čísla, trendy, problémy — bez čekání na někoho, kdo to dá dohromady.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SEKCE "CO PŘESNĚ DĚLÁM" - SKRYTÁ PRO POZDĚJŠÍ ÚPRAVY -->
     <section id="sluzby" style="display:none !important;">
         <div class="container">
@@ -2115,13 +2214,10 @@
                         <strong>Pomáhám firmám růst bez proporcionálního růstu nákladů.</strong>
                     </p>
                     <p>
-                        Mám background v Pythonu, AI modelech a automatizaci procesů.
-                        Než navrhuji řešení, nejdřív pochopím váš byznys model 
-                        a kde ve firmě vzniká hodnota.
+                        Každý projekt vedu osobně od prvního hovoru po nasazení. Nejsem konzultant, který předá prezentaci a odejde — navrhnu řešení a dotáhnu ho do provozu.
                     </p>
                     <p>
-                        Každý projekt začínám diagnostikou — technologie přichází 
-                        až když vím, co skutečně potřebujete vyřešit.
+                        Začínám vždy byznysem, ne technologií. Než navrhnu řešení, potřebuju rozumět tomu, jak vaše firma funguje, kde vzniká hodnota a kde se ztrácí čas. Výsledek funguje v reálném provozu, ne jen na papíře.
                     </p>
                 </div>
             </div>
