@@ -1974,7 +1974,7 @@
             <!-- 3 USE CASES -->
             <div class="industry-grid industry-grid-3">
                 <div class="industry-card">
-                    <div class="industry-icon">📄</div>
+                    <div class="industry-icon"></div>
                     <h3>Dokumenty a objednávky</h3>
                     <p>
                         Faktury, poptávky, objednávky — ručně se přepisují do systému. Každý den.
@@ -1982,7 +1982,7 @@
                     <div class="industry-result">→ Automaticky, bez chyb, bez zdržení</div>
                 </div>
                 <div class="industry-card">
-                    <div class="industry-icon">🧠</div>
+                    <div class="industry-icon"></div>
                     <h3>Know-how ve firmě</h3>
                     <p>
                         Postupy jsou v hlavách lidí. Co když onemocní? Co když odejdou?
@@ -1990,7 +1990,7 @@
                     <div class="industry-result">→ AI asistent, který zná vaše postupy</div>
                 </div>
                 <div class="industry-card">
-                    <div class="industry-icon">📊</div>
+                    <div class="industry-icon"></div>
                     <h3>Reporting pro vedení</h3>
                     <p>
                         Data existují, ale nikdo je nesbírá. Než vznikne report, je pozdě.
@@ -2118,7 +2118,7 @@
 
             <!-- Human control badge -->
             <div class="human-control">
-                <div class="human-control-icon">👤</div>
+                <div class="human-control-icon"></div>
                 <p>
                     <strong>Člověk zůstává v kontrole.</strong>
                     Systémy zpracují rutinu a připraví podklady —
@@ -2363,8 +2363,8 @@
             root: {
                 message: "Jak vám můžu pomoct?",
                 options: [
-                    { text: "🔍 Spustit scan (60 sekund)", next: "scan_intro" },
-                    { text: "❓ Mám otázky", next: "faq_menu" }
+                    { text: "Spustit scan (60 sekund)", next: "scan_intro" },
+                    { text: "Mám otázky", next: "faq_menu" }
                 ]
             },
 
@@ -2385,9 +2385,9 @@
             faq_menu: {
                 message: "Co vás zajímá?",
                 options: [
-                    { text: "💼 O spolupráci", next: "faq_spoluprace" },
-                    { text: "⚙️ O procesech a AI", next: "faq_procesy" },
-                    { text: "💰 O výsledcích a cenách", next: "faq_vysledky" }
+                    { text: "O spolupráci", next: "faq_spoluprace" },
+                    { text: "O procesech a AI", next: "faq_procesy" },
+                    { text: "O výsledcích a cenách", next: "faq_vysledky" }
                 ]
             },
 
@@ -2594,7 +2594,7 @@
             // VÝSLEDKY - BOTTLENECK
             // ═══════════════════════════════════════════
             result_bottleneck_low: {
-                message: "📊 Váš scan je hotový.\n\n⚠️ Bottleneck: VY — ale zatím zvládáte.\n\nVšechno musí přes vás, ale zatím to nebolí. Při růstu se to změní rychle.\n\nTip: Identifikujte 3 rozhodnutí, která děláte opakovaně. Jedno z nich můžete delegovat nebo automatizovat do měsíce.",
+                message: "Váš scan je hotový.\n\nBottleneck: VY — ale zatím zvládáte.\n\nVšechno musí přes vás, ale zatím to nebolí. Při růstu se to změní rychle.\n\nTip: Identifikujte 3 rozhodnutí, která děláte opakovaně. Jedno z nich můžete delegovat nebo automatizovat do měsíce.",
                 options: [
                     { text: "Ukázat mi jak", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2602,7 +2602,7 @@
             },
 
             result_bottleneck_medium: {
-                message: "📊 Váš scan je hotový.\n\n🔴 Hlavní bottleneck: VY.\n\nVšechno musí přes vás a trávíte 5–15h týdně rutinou.\n\nTo je 400+ hodin ročně. Měsíc života.\n\nTvrdá pravda: Každou hodinu, kterou trávíte rutinou, kradete firmě strategické vedení.\n\nJeden krok: Zítra delegujte JEDNO rozhodnutí, které děláte každý týden.",
+                message: "Váš scan je hotový.\n\nHlavní bottleneck: VY.\n\nVšechno musí přes vás a trávíte 5–15h týdně rutinou.\n\nTo je 400+ hodin ročně. Měsíc života.\n\nTvrdá pravda: Každou hodinu, kterou trávíte rutinou, kradete firmě strategické vedení.\n\nJeden krok: Zítra delegujte JEDNO rozhodnutí, které děláte každý týden.",
                 options: [
                     { text: "Pomozte mi vybrat které", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2610,7 +2610,7 @@
             },
 
             result_bottleneck_high: {
-                message: "📊 Váš scan je hotový.\n\n🔴 KRITICKÉ: Vy jste největší brzda své firmy.\n\nVšechno musí přes vás + 15h+ rutiny týdně = 780 hodin ročně.\n\nTo je kapacita na rozjetí nové divize. Nebo na život.\n\nBez změny firma neroste. Roste jen vaše vyčerpání.\n\nDva kroky:\n1. Zastavte se. Dnes.\n2. Napište 3 věci, které děláte jen proto, že \"to nikdo jiný neumí\".",
+                message: "Váš scan je hotový.\n\nKRITICKÉ: Vy jste největší brzda své firmy.\n\nVšechno musí přes vás + 15h+ rutiny týdně = 780 hodin ročně.\n\nTo je kapacita na rozjetí nové divize. Nebo na život.\n\nBez změny firma neroste. Roste jen vaše vyčerpání.\n\nDva kroky:\n1. Zastavte se. Dnes.\n2. Napište 3 věci, které děláte jen proto, že \"to nikdo jiný neumí\".",
                 options: [
                     { text: "Pomozte mi s tím", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2621,7 +2621,7 @@
             // VÝSLEDKY - KAPACITA TÝMU
             // ═══════════════════════════════════════════
             result_capacity_low: {
-                message: "📊 Váš scan je hotový.\n\n⚠️ Bottleneck: Kapacita týmu.\n\nTým maká, ale nestíhá. Vy osobně zatím OK.\n\nProblém není v lidech — je v procesech, které škálují lineárně s objemem.\n\nTip: Najděte 1 proces, který se opakuje 10× denně. Tam je páka.",
+                message: "Váš scan je hotový.\n\nBottleneck: Kapacita týmu.\n\nTým maká, ale nestíhá. Vy osobně zatím OK.\n\nProblém není v lidech — je v procesech, které škálují lineárně s objemem.\n\nTip: Najděte 1 proces, který se opakuje 10× denně. Tam je páka.",
                 options: [
                     { text: "Ukázat mi kde začít", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2629,7 +2629,7 @@
             },
 
             result_capacity_medium: {
-                message: "📊 Váš scan je hotový.\n\n🔴 Dvojitý bottleneck: Tým + VY.\n\nTým nestíhá a vy trávíte 5–15h rutinou.\n\nKlasický scénář: Hasíte požáry místo budování systémů.\n\nJeden krok: Přestaňte hasit. Vyberte 1 opakující se problém a vyřešte ho systémově.",
+                message: "Váš scan je hotový.\n\nDvojitý bottleneck: Tým + VY.\n\nTým nestíhá a vy trávíte 5–15h rutinou.\n\nKlasický scénář: Hasíte požáry místo budování systémů.\n\nJeden krok: Přestaňte hasit. Vyberte 1 opakující se problém a vyřešte ho systémově.",
                 options: [
                     { text: "Pomozte mi vybrat", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2637,7 +2637,7 @@
             },
 
             result_capacity_high: {
-                message: "📊 Váš scan je hotový.\n\n🔴 KRITICKÉ: Systém kolabuje.\n\nTým nestíhá, vy trávíte 15h+ rutinou.\n\nTohle není růst. Tohle je běh na místě s rostoucí únavou.\n\nTvrdá pravda: Najímání dalších lidí to nevyřeší. Potřebujete infrastrukturu.\n\nJeden krok: Zastavte růst, dokud nemáte systémy.",
+                message: "Váš scan je hotový.\n\nKRITICKÉ: Systém kolabuje.\n\nTým nestíhá, vy trávíte 15h+ rutinou.\n\nTohle není růst. Tohle je běh na místě s rostoucí únavou.\n\nTvrdá pravda: Najímání dalších lidí to nevyřeší. Potřebujete infrastrukturu.\n\nJeden krok: Zastavte růst, dokud nemáte systémy.",
                 options: [
                     { text: "Pomozte mi to nastavit", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2648,7 +2648,7 @@
             // VÝSLEDKY - PŘEHLED
             // ═══════════════════════════════════════════
             result_visibility_low: {
-                message: "📊 Váš scan je hotový.\n\n⚠️ Bottleneck: Chybějící přehled.\n\nNevíte, co se děje, ale zatím to nebolí.\n\nPozor: Tohle je tichý zabiják růstu. Rozhodujete na základě pocitů, ne dat.\n\nTip: Jeden dashboard s 3 čísly, která vám řeknou zdraví firmy.",
+                message: "Váš scan je hotový.\n\nBottleneck: Chybějící přehled.\n\nNevíte, co se děje, ale zatím to nebolí.\n\nPozor: Tohle je tichý zabiják růstu. Rozhodujete na základě pocitů, ne dat.\n\nTip: Jeden dashboard s 3 čísly, která vám řeknou zdraví firmy.",
                 options: [
                     { text: "Ukázat mi jak", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2656,7 +2656,7 @@
             },
 
             result_visibility_medium: {
-                message: "📊 Váš scan je hotový.\n\n🔴 Bottleneck: Letíte naslepo + rutina.\n\nNemáte přehled a trávíte 5–15h týdně rutinou.\n\nKombinace, která vede k špatným rozhodnutím.\n\nJeden krok: Než budete automatizovat, zjistěte CO automatizovat. Data first.",
+                message: "Váš scan je hotový.\n\nBottleneck: Letíte naslepo + rutina.\n\nNemáte přehled a trávíte 5–15h týdně rutinou.\n\nKombinace, která vede k špatným rozhodnutím.\n\nJeden krok: Než budete automatizovat, zjistěte CO automatizovat. Data first.",
                 options: [
                     { text: "Pomozte mi s přehledem", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2664,7 +2664,7 @@
             },
 
             result_visibility_high: {
-                message: "📊 Váš scan je hotový.\n\n🔴 KRITICKÉ: Řídíte firmu naslepo.\n\nŽádný přehled + 15h+ rutiny = recept na vyhoření a špatná rozhodnutí.\n\nNemůžete optimalizovat, co neměříte.\n\nPrvní krok: Ne automatizace. Měření. Pak teprve systémy.",
+                message: "Váš scan je hotový.\n\nKRITICKÉ: Řídíte firmu naslepo.\n\nŽádný přehled + 15h+ rutiny = recept na vyhoření a špatná rozhodnutí.\n\nNemůžete optimalizovat, co neměříte.\n\nPrvní krok: Ne automatizace. Měření. Pak teprve systémy.",
                 options: [
                     { text: "Pomozte mi s tím", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2675,7 +2675,7 @@
             // VÝSLEDKY - MARŽE
             // ═══════════════════════════════════════════
             result_margin_low: {
-                message: "📊 Váš scan je hotový.\n\n⚠️ Bottleneck: Klesající efektivita.\n\nRostete, ale marže klesá. Zatím to zvládáte.\n\nProblém: Náklady rostou rychleji než výnosy. Škálujete neefektivitu.\n\nTip: Spočítejte náklad na 1 zakázku. Pak hledejte, kde se dá zlevnit bez ztráty kvality.",
+                message: "Váš scan je hotový.\n\nBottleneck: Klesající efektivita.\n\nRostete, ale marže klesá. Zatím to zvládáte.\n\nProblém: Náklady rostou rychleji než výnosy. Škálujete neefektivitu.\n\nTip: Spočítejte náklad na 1 zakázku. Pak hledejte, kde se dá zlevnit bez ztráty kvality.",
                 options: [
                     { text: "Ukázat mi kde", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2683,7 +2683,7 @@
             },
 
             result_margin_medium: {
-                message: "📊 Váš scan je hotový.\n\n🔴 Bottleneck: Neškálující model.\n\nMarže klesá a vy trávíte 5–15h rutinou.\n\nKaždá hodina vaší rutiny = další kapání marže.\n\nJeden krok: Automatizujte 1 proces v dodávce. Začněte tam, kde je nejvíc manuální práce.",
+                message: "Váš scan je hotový.\n\nBottleneck: Neškálující model.\n\nMarže klesá a vy trávíte 5–15h rutinou.\n\nKaždá hodina vaší rutiny = další kapání marže.\n\nJeden krok: Automatizujte 1 proces v dodávce. Začněte tam, kde je nejvíc manuální práce.",
                 options: [
                     { text: "Pomozte mi najít kde", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
@@ -2691,7 +2691,7 @@
             },
 
             result_margin_high: {
-                message: "📊 Váš scan je hotový.\n\n🔴 KRITICKÉ: Růst vás zabíjí.\n\nMarže klesá + 15h+ rutiny = firma, která čím víc roste, tím míň vydělává.\n\nTohle nekončí dobře.\n\nTvrdá pravda: Potřebujete přestat růst a přestavět. Nebo přestat úplně.\n\nJeden krok: Audit nákladů vs. výnosů na zakázku. Hned.",
+                message: "Váš scan je hotový.\n\nKRITICKÉ: Růst vás zabíjí.\n\nMarže klesá + 15h+ rutiny = firma, která čím víc roste, tím míň vydělává.\n\nTohle nekončí dobře.\n\nTvrdá pravda: Potřebujete přestat růst a přestavět. Nebo přestat úplně.\n\nJeden krok: Audit nákladů vs. výnosů na zakázku. Hned.",
                 options: [
                     { text: "Pomozte mi s auditem", next: "booking", cta: true },
                     { text: "Spustit znovu", next: "root" }
