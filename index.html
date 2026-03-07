@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pomáhám firmám růst bez proporcionálního růstu nákladů. Najdeme bottleneck, vyřešíme ho pomocí AI a uvolníme týmu 15-30% času.">
-    <title>Bronislav Klus — Růst bez proporcionálního růstu nákladů</title>
+    <title>Bronislav Klus | Konzultant pro automatizaci procesů a AI systémy | Brno</title>
+    <meta name="description" content="Bronislav Klus — konzultant pro automatizaci procesů a implementaci AI pro české SMB firmy s 10–100 zaměstnanci. Každý projekt osobně od analýzy po nasazení. Brno a celá ČR.">
+    <meta name="keywords" content="Bronislav Klus, automatizace procesů, AI konzultant, implementace AI, SMB, SME, malé a střední firmy, konzultant Brno, workflow automation, AI do firmy">
+    <meta name="author" content="Bronislav Klus">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bronislavklus.cz/">
 
     <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -12,31 +16,83 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bronislav Klus — Růst bez proporcionálního růstu nákladů">
-    <meta property="og:description" content="Najdeme spolu bottleneck ve vašich procesech a vyřešíme ho pomocí AI. Uvolníme týmu 15-30% času bez nových lidí a navyšování nákladů.">
+    <meta property="og:title" content="Bronislav Klus | Konzultant pro automatizaci a AI systémy">
+    <meta property="og:description" content="Pomáhám českým SMB firmám růst bez proporcionálního růstu nákladů. Automatizace procesů a AI systémy na míru — osobně vedené projekty.">
     <meta property="og:url" content="https://bronislavklus.cz">
     <meta property="og:locale" content="cs_CZ">
+    <meta property="og:image" content="https://bronislavklus.cz/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bronislav Klus | Konzultant pro automatizaci a AI systémy">
+    <meta name="twitter:description" content="Pomáhám českým SMB firmám růst bez proporcionálního růstu nákladů. Automatizace procesů a AI systémy na míru.">
+    <meta name="twitter:image" content="https://bronislavklus.cz/og-image.png">
+
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSH73PTSKL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WSH73PTSKL');
+    </script>
 
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Bronislav Klus - Růst bez proporcionálního růstu nákladů",
-        "description": "Pomáhám firmám růst bez proporcionálního růstu nákladů pomocí AI a automatizace procesů.",
-        "url": "https://bronislavklus.cz",
-        "email": "brona.klus@gmail.com",
-        "priceRange": "$$",
-        "serviceType": ["Process Automation", "AI Integration", "AI Systems", "Business Process Optimization"],
-        "areaServed": {
-            "@type": "Country",
-            "name": "Czech Republic"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Bronislav Klus",
-            "jobTitle": "AI & Automation Consultant"
-        }
+        "@graph": [
+            {
+                "@type": "Person",
+                "name": "Bronislav Klus",
+                "givenName": "Bronislav",
+                "familyName": "Klus",
+                "jobTitle": "Konzultant pro automatizaci procesů a AI systémy na míru",
+                "description": "Pomáhám českým firmám s 10–100 zaměstnanci automatizovat manuální procesy a implementovat AI systémy na míru.",
+                "url": "https://bronislavklus.cz",
+                "email": "brona.klus@gmail.com",
+                "telephone": "+420777512923",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Brno",
+                    "addressRegion": "Jihomoravský kraj",
+                    "addressCountry": "CZ"
+                },
+                "knowsAbout": [
+                    "Automatizace procesů",
+                    "Implementace AI do firem",
+                    "AI konzultace pro SMB",
+                    "Workflow automation",
+                    "AI systémy pro malé a střední firmy",
+                    "Business process optimization"
+                ],
+                "sameAs": [
+                    "https://www.linkedin.com/in/bronislavklus"
+                ]
+            },
+            {
+                "@type": "LocalBusiness",
+                "name": "Bronislav Klus | AI & Automatizace",
+                "founder": "Bronislav Klus",
+                "url": "https://bronislavklus.cz",
+                "email": "brona.klus@gmail.com",
+                "telephone": "+420777512923",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Brno",
+                    "addressRegion": "Jihomoravský kraj",
+                    "addressCountry": "CZ"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Česká republika"
+                },
+                "description": "Konzultace a implementace automatizace procesů a AI systémů pro české SMB a SME firmy.",
+                "priceRange": "Cena dle rozsahu projektu"
+            }
+        ]
     }
     </script>
 
@@ -2981,6 +3037,58 @@
 
             // Observe all fade-in elements
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <!-- GA4 Event Tracking -->
+    <script>
+        // Calendly
+        document.querySelectorAll('a[href*="calendly"]').forEach(el => {
+            el.addEventListener('click', () => {
+                gtag('event', 'calendly_click', { event_category: 'contact', event_label: 'Calendly rezervace' });
+            });
+        });
+
+        // Email
+        document.querySelectorAll('a[href^="mailto"]').forEach(el => {
+            el.addEventListener('click', () => {
+                gtag('event', 'email_click', { event_category: 'contact', event_label: el.getAttribute('href') });
+            });
+        });
+
+        // WhatsApp
+        document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]').forEach(el => {
+            el.addEventListener('click', () => {
+                gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'WhatsApp' });
+            });
+        });
+
+        // Formulář
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', () => {
+                gtag('event', 'form_submit', { event_category: 'contact', event_label: 'Kontaktní formulář' });
+            });
+        }
+
+        // Scroll depth
+        const scrollMilestones = [25, 50, 75, 90];
+        const reached = new Set();
+        window.addEventListener('scroll', () => {
+            const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            scrollMilestones.forEach(m => {
+                if (pct >= m && !reached.has(m)) {
+                    reached.add(m);
+                    gtag('event', 'scroll_depth', { event_category: 'engagement', event_label: m + '%' });
+                }
+            });
+        });
+
+        // Čas na stránce
+        [30, 60, 120].forEach(sec => {
+            setTimeout(() => {
+                gtag('event', 'time_on_page', { event_category: 'engagement', event_label: sec + 's' });
+            }, sec * 1000);
         });
     </script>
 
